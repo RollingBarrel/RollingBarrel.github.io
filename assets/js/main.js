@@ -1,7 +1,7 @@
 /**
-* Template Name: Day
-* Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-* Updated: Mar 19 2024 with Bootstrap v5.3.3
+* Template Name: Dewi
+* Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -49,14 +49,12 @@
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.navmenu .has-dropdown i').forEach(navmenu => {
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
-      if (document.querySelector('.mobile-nav-active')) {
-        e.preventDefault();
-        this.parentNode.classList.toggle('active');
-        this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-        e.stopImmediatePropagation();
-      }
+      e.preventDefault();
+      this.parentNode.classList.toggle('active');
+      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      e.stopImmediatePropagation();
     });
   });
 
@@ -105,22 +103,35 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Init swiper sliders
-   */
-  function initSwiper() {
-    document.querySelectorAll('.swiper').forEach(function(swiper) {
-      let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
-      new Swiper(swiper, config);
-    });
-  }
-  window.addEventListener('load', initSwiper);
-
-  /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+
+  /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
+
+  /**
+   * Init swiper sliders
+   */
+  function initSwiper() {
+    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+      let config = JSON.parse(
+        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+      );
+
+      if (swiperElement.classList.contains("swiper-tab")) {
+        initSwiperWithCustomPagination(swiperElement, config);
+      } else {
+        new Swiper(swiperElement, config);
+      }
+    });
+  }
+
+  window.addEventListener("load", initSwiper);
 
   /**
    * Init isotope layout and filters
@@ -160,22 +171,25 @@
    */
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
-      const section = document.querySelector(window.location.hash);
-      if (section) {
-        section.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+      if (document.querySelector(window.location.hash)) {
+        setTimeout(() => {
+          let section = document.querySelector(window.location.hash);
+          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+          window.scrollTo({
+            top: section.offsetTop - parseInt(scrollMarginTop),
+            behavior: 'smooth'
+          });
+        }, 100);
       }
     }
   });
 
   /**
-   * Auto-Active Navmenu Links
+   * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
-  function navmenuActive() {
+  function navmenuScrollspy() {
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);
@@ -189,7 +203,7 @@
       }
     })
   }
-  window.addEventListener('load', navmenuActive);
-  document.addEventListener('scroll', navmenuActive);
+  window.addEventListener('load', navmenuScrollspy);
+  document.addEventListener('scroll', navmenuScrollspy);
 
 })();
