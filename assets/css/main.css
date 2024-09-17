@@ -752,6 +752,30 @@ h6 {
   }
 }
 
+ /*--------------------------------------------------------------
+  # Containers
+  --------------------------------------------------------------*/
+  [class^=container] {
+    position: relative;
+    padding-right: var(--bs-gutter-x, 0.9rem);
+    padding-left: var(--bs-gutter-x, 0.9rem);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  .container-big {
+    max-width: 1700px;
+  }
+
+  .container-mega {
+    max-width: 1880px;
+  }
+
+  .container-peque {
+    max-width: calc(576px + 5vw);
+  }
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
