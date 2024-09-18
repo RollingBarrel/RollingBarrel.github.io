@@ -959,6 +959,10 @@ section,
   justify-content: center;
 }
 
+body:not(.index-page) .hero {
+  min-height: 80vh;
+}
+
 .hero img {
   position: absolute;
   inset: 0;
@@ -1480,16 +1484,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Gallery Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.gallery-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.gallery-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -1501,36 +1505,36 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.gallery-filters li:hover,
+.gallery-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.gallery-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.gallery-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .gallery-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-content {
+.gallery-content {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.gallery-content img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+.gallery-content .gallery-info {
   opacity: 0;
   position: absolute;
   inset: 0;
@@ -1540,7 +1544,7 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.gallery-content .gallery-info h4 {
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
@@ -1549,7 +1553,7 @@ section,
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.gallery-content .gallery-info p {
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -1561,8 +1565,8 @@ section,
   color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.gallery-content .gallery-info .preview-link,
+.gallery-content .gallery-info .details-link {
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -1572,38 +1576,38 @@ section,
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.gallery-content .gallery-info .preview-link:hover,
+.gallery-content .gallery-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
+.gallery-content .gallery-info .details-link {
   left: 50%;
   font-size: 34px;
   line-height: 0;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info {
+.gallery-content:hover .gallery-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
+.gallery-content:hover img {
   transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team .member {
+.member {
   position: relative;
 }
 
-.team .member .pic {
+.member .pic {
   overflow: hidden;
   margin-bottom: 50px;
 }
 
-.team .member .member-info {
+.member .member-info {
   background-color: var(--surface-color);
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1616,7 +1620,7 @@ section,
   transition: 0.5s;
 }
 
-.team .member h4 {
+.member h4 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
@@ -1624,7 +1628,7 @@ section,
   padding-bottom: 10px;
 }
 
-.team .member h4::after {
+.member h4::after {
   content: "";
   position: absolute;
   display: block;
@@ -1635,28 +1639,28 @@ section,
   left: 0;
 }
 
-.team .member span {
+.member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-.team .member .social {
+.member .social {
   position: absolute;
   right: 15px;
   bottom: 15px;
 }
 
-.team .member .social a {
+.member .social a {
   transition: color 0.3s;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.team .member .social a:hover {
+.member .social a:hover {
   color: var(--accent-color);
 }
 
-.team .member .social i {
+.member .social i {
   font-size: 16px;
   margin: 0 2px;
 }
