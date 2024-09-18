@@ -1605,6 +1605,18 @@ body:not(.index-page) .hero {
 .member .pic {
   overflow: hidden;
   margin-bottom: 50px;
+  width: 19rem;
+  height: 19rem;
+  position: relative;
+}
+
+.member .pic img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .member .member-info {
