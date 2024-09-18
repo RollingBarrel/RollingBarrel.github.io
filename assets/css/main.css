@@ -1646,9 +1646,15 @@ body:not(.index-page) .hero {
 }
 
 .member .social {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
+  position: relative;
+}
+
+@media (min-width: 1200px){
+  .member .social {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
 }
 
 .member .social a {
