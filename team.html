@@ -31,200 +31,118 @@
 
     <main class="main">
 
-		<!-- Hero Section -->
-		<section id="hero" class="hero section dark-background">
-			<img src="assets/img/hero-bg.jpg" alt="" >
-			<div class="container d-flex flex-column align-items-center">
-				<h2>Chrysalis Gallery</h2>
-				<p>Explore the aspect of our work</p>
-				<div class="d-flex mt-4">
-					<a href="#gallery" class="btn-get-started">Discover</a>
-				</div>
-			</div>
-		</section>
-		<!-- /Hero Section -->
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+            <img src="assets/img/hero-bg.jpg" alt="">
+            <div class="container d-flex flex-column align-items-center">
+                <h2>Chrysalis Gallery</h2>
+                <p>Explore the aspect of our work</p>
+                <div class="d-flex mt-4">
+                    <a href="#gallery" class="btn-get-started">Discover</a>
+                </div>
+            </div>
+        </section>
+        <!-- /Hero Section -->
 
-		<!-- Gallery Section -->
-		<section id="gallery" class="gallery section">
-				<div class="container">
-				<div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-					<ul class="gallery-filters isotope-filters">
-						<li data-filter="*" class="filter-active">All</li>
-						<li data-filter=".filter-artist">Artists</li>
-						<li data-filter=".filter-programmers">Programmers</li>
-					</ul>
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section">
+            <div class="container">
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                    <ul class="gallery-filters isotope-filters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-artist">Artists</li>
+                        <li data-filter=".filter-programmer">Programmers</li>
+                    </ul>
 
-					<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-artist">
-							<div class="member">
-                                <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                    <div class="row gy-4 isotope-container mt-4" data-aos="fade-up" data-aos-delay="200">
+
+                        <div id="gallery-placeholder"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Aquí se incluirá el footer mediante JavaScript -->
+    <div id="footer-placeholder"></div>
+
+
+    <!-- Incluir el header y el footer con JavaScript -->
+    <script>
+        // Cargar el head y el header
+        fetch("inc/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").outerHTML = data;
+            });
+        // Cargar footer
+        fetch("inc/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+                // Compute current year for footer
+                document.getElementById("current-year").innerHTML = new Date().getFullYear();
+            });
+    </script>
+
+    <script>
+        // Function to create the gallery
+        function createGallery(data) {
+            const gallery = document.getElementById("gallery-placeholder");
+
+            data.forEach((person) => {
+                const element = `<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-${person.Filter}">
+                            <div class="member">
+                                <div class="pic"><img src="assets/img/team/team-placeholder.jpg" class="img-fluid" alt=""></div>
                                 <div class="member-info">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
+                                    <h4>${person.Name}</h4>
+                                    <span>${person.Roles}</span>
                                     <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                        ${person.Linkedin ? `<a href="${person.Linkedin}" target="_blank"><i class="bi bi-linkedin"></i></a>` : ""}
+                                        ${person.GitHub ? `<a href="${person.GitHub}" target="_blank"><i class="bi bi-github"></i></a>` : ""}
+                                        ${person.ArtStation ? `<a href="${person.ArtStation}" target="_blank"><i class="fab fa-artstation"></i></a>` : ""}
+                                        ${person.Website ? `<a href="${person.Website}" target="_blank"><i class="bi bi-globe"></i></a>` : ""}
                                     </div>
                                 </div>
                             </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-artist">
-							<div class="member">
-                                <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-artist">
-							<div class="member">
-                                <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-artist">
-							<div class="member">
-                                <div class="pic"><img src="https://media.a24.com/p/f3cf0543842f65a00f1b74fbf9b439c4/adjuntos/296/imagenes/008/738/0008738047/1200x675/smart/netflix-walter-whitepng.png" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-programmers">
-							<div class="member">
-                                <div class="pic"><img src="https://www.losreplicantes.com/images/articulos/11000/11110/s3.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Skyler White</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-programmers">
-							<div class="member">
-                                <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-programmers">
-							<div class="member">
-                                <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-programmers">
-							<div class="member">
-                                <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                        <a href=""><i class="bi bi-instagram"></i></a>
-                                        <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                        </div>`;
+                gallery.innerHTML += element;
+            });
+        }
 
-	</main>
-	
+        // Read gallery data from JSON
+        fetch("assets/json/team_info.json")
+            .then(response => response.json())
+            .then(data => {
+                // Call the function to generate the gallery
+                createGallery(data);
+            });
 
-	<!-- Aquí se incluirá el footer mediante JavaScript -->
-	<div id="footer-placeholder"></div>
+    </script>
 
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-	<!-- Incluir el header y el footer con JavaScript -->
-	<script>
-		// Cargar el head y el header
-		fetch("inc/header.html")
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById("header-placeholder").outerHTML = data;
-			});
-		// Cargar footer
-		fetch("inc/footer.html")
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById("footer-placeholder").innerHTML = data;
-				// Compute current year for footer
-				document.getElementById("current-year").innerHTML = new Date().getFullYear();
-			});
-	</script>
+    <!-- Preloader -->
+    <!-- <div id="preloader"></div> -->
 
-	<!-- Scroll Top -->
-	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-		<i class="bi bi-arrow-up-short"></i>
-	</a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-	<!-- Preloader -->
-	<!-- <div id="preloader"></div> -->
-
-	<!-- Vendor JS Files -->
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/vendor/php-email-form/validate.js"></script>
-	<script src="assets/vendor/aos/aos.js"></script>
-	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-	<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-	<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-	<!-- Main JS File -->
-	<script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
