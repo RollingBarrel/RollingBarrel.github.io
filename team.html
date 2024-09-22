@@ -54,11 +54,7 @@
                         <li data-filter=".filter-programmer">Programmers</li>
                     </ul>
 
-                    <div class="row gy-4 isotope-container mt-4">
-
-                        <div id="gallery-placeholder"></div>
-
-                    </div>
+                    <div id="gallery-placeholder"></div>
                 </div>
             </div>
         </section>
@@ -66,50 +62,50 @@
     </main>
 
 
-	<!-- Aquí se incluirá el footer mediante JavaScript -->
-	<footer id="footer" class="footer dark-background">
-		<div class="container footer-top">
-			<div class="row gy-4 justify-content-center">
-				<div class="col-lg-4 col-md-6 col-12 footer-about">
-					<a href="/" class="logo d-flex align-items-center">
-						<span class="sitename">Rolling Barrel Stuido</span>
-					</a>
-					<!-- <div class="footer-contact pt-3">
+    <!-- Aquí se incluirá el footer mediante JavaScript -->
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 footer-about">
+                    <a href="/" class="logo d-flex align-items-center">
+                        <span class="sitename">Rolling Barrel Stuido</span>
+                    </a>
+                    <!-- <div class="footer-contact pt-3">
 						<p>C/ de Badajoz, 73</p>
 						<p>Sant Martí, 08005 Barcelona</p>
 						<p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
 						<p><strong>Email:</strong> <span>info@example.com</span></p>
 					</div> -->
-					<div class="social-links d-flex mt-4">
-						<a href=""><i class="bi bi-twitter-x"></i></a>
-						<a href=""><i class="bi bi-facebook"></i></a>
-						<a href=""><i class="bi bi-instagram"></i></a>
-						<a href=""><i class="bi bi-linkedin"></i></a>
-					</div>
-				</div>
-	
-				<div class="col-lg-4 col-md-6 col-12 footer-links">
-					<h4>Useful Links</h4>
-					<ul style="column-count: 2;">
-						<li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/game">Game</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/gallery">Gallery</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/team">Team</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/about">About</a></li>
-					</ul>
-				</div>
-	
-	
-			</div>
-		</div>
-	
-		<div class="container copyright text-center mt-4">
-			<p>© <span>Copyright</span> <strong class="color-accent">Rolling Barrel Studio</strong></p>
-			<div class="">
-				All Rights Reserved
-			</div>
-		</div>
-	</footer>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul style="column-count: 2;">
+                        <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="/game">Game</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="/gallery">Gallery</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="/team">Team</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="/about">About</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="color-accent">Rolling Barrel Studio</strong></p>
+            <div class="">
+                All Rights Reserved
+            </div>
+        </div>
+    </footer>
 
     <!-- Incluir el header con JavaScript -->
     <script>
@@ -124,26 +120,28 @@
     <script>
         // Function to create the gallery
         function createGallery(data) {
-            const gallery = document.getElementById("gallery-placeholder");
-
+            let content = `<div class="row gy-4 isotope-container mt-4">`;
             data.forEach((person) => {
-                const element = `<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-${person.Filter}">
-                            <div class="member">
-                                <div class="pic"><img src="assets/img/team/team-placeholder.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>${person.Name}</h4>
-                                    <span>${person.Roles}</span>
-                                    <div class="social">
-                                        ${person.Linkedin ? `<a href="${person.Linkedin}" target="_blank"><i class="bi bi-linkedin"></i></a>` : ""}
-                                        ${person.GitHub ? `<a href="${person.GitHub}" target="_blank"><i class="bi bi-github"></i></a>` : ""}
-                                        ${person.ArtStation ? `<a href="${person.ArtStation}" target="_blank"><i class="fab fa-artstation"></i></a>` : ""}
-                                        ${person.Website ? `<a href="${person.Website}" target="_blank"><i class="bi bi-globe"></i></a>` : ""}
-                                    </div>
+                content += `<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-${person.Filter}">
+                        <div class="member">
+                            <div class="pic"><img src="assets/img/team/team-placeholder.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>${person.Name}</h4>
+                                <span>${person.Roles}</span>
+                                <div class="social">
+                                    ${person.Linkedin ? `<a href="${person.Linkedin}" target="_blank"><i class="bi bi-linkedin"></i></a>` : ""}
+                                    ${person.GitHub ? `<a href="${person.GitHub}" target="_blank"><i class="bi bi-github"></i></a>` : ""}
+                                    ${person.ArtStation ? `<a href="${person.ArtStation}" target="_blank"><i class="fab fa-artstation"></i></a>` : ""}
+                                    ${person.Website ? `<a href="${person.Website}" target="_blank"><i class="bi bi-globe"></i></a>` : ""}
                                 </div>
                             </div>
-                        </div>`;
-                gallery.innerHTML += element;
+                        </div>
+                    </div>`;
             });
+            content += `</div>`;
+
+            const gallery = document.getElementById("gallery-placeholder");
+            gallery.outerHTML = content;
         }
 
         // Read gallery data from JSON
