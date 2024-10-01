@@ -952,7 +952,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   padding: 80px 0;
   display: flex;
@@ -1905,4 +1905,17 @@ body:not(.index-page) .hero {
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.btn-rojo {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.btn-rojo:hover {
+  color: var(--contrast-color);
+  background: #df1529; 
 }
