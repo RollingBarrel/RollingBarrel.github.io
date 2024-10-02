@@ -47,14 +47,16 @@
         <!-- Gallery Section -->
         <section id="gallery" class="gallery section">
             <div class="container">
-                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                    <ul class="gallery-filters isotope-filters">
+                <div class="layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                    <ul class="gallery-filters">
                         <li data-filter="*" class="filter-active">All</li>
                         <li data-filter=".filter-artist">Artists</li>
                         <li data-filter=".filter-programmer">Programmers</li>
                     </ul>
 
-                    <div id="gallery-placeholder"></div>
+                    <div id="gallery-placeholder">
+                        <!-- Items will be dynamically added here -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -120,9 +122,9 @@
     <script>
         // Function to create the gallery
         function createGallery(data) {
-            let content = `<div class="row gy-4 isotope-container mt-4">`;
+            let content = `<div class="row gy-4 mt-4">`;
             data.forEach((person) => {
-                content += `<div class="col-lg-3 col-md-4 col-6 gallery-item isotope-item filter-${person.Filter}">
+                content += `<div class="col-lg-3 col-md-4 col-6 gallery-item filter-${person.Filter}">
                         <div class="member">
                             <div class="pic"><img src="assets/img/team/team-placeholder.jpg" class="img-fluid" alt=""></div>
                             <div class="member-info">
@@ -144,12 +146,38 @@
             gallery.outerHTML = content;
         }
 
+        function addFilterLogic() {
+            var filterButtons = document.querySelectorAll('.gallery-filters li');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Set active
+                    var activeFilter = document.querySelector('li.filter-active')
+                    if (activeFilter) {
+                        activeFilter.classList.remove("filter-active");
+                    }
+                    this.classList.add("filter-active");
+
+                    // Filter elements 
+                    var filterValue = this.getAttribute('data-filter');
+                    var items = document.querySelectorAll('.gallery-item');
+                    if (filterValue == '*') {
+                        items.forEach(item => { item.style.display = "block" });
+                    } else {
+                        items.forEach(item => { item.style.display = "none" });
+                        var itemsToEnable = document.querySelectorAll(filterValue);
+                        itemsToEnable.forEach(item => { item.style.display = "block" });
+                    }
+                });
+            });
+        }
+
         // Read gallery data from JSON
         fetch("assets/json/team_info.json")
             .then(response => response.json())
             .then(data => {
                 // Call the function to generate the gallery
                 createGallery(data);
+                addFilterLogic();
             });
 
     </script>
@@ -170,7 +198,6 @@
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
