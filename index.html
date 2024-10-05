@@ -20,6 +20,10 @@
 	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
 	<!-- Main CSS File -->
 	<link href="assets/css/main.css" rel="stylesheet">
 </head>
@@ -30,19 +34,17 @@
 	<div id="header-placeholder"></div>
 
 	<main class="main">
-
 		<!-- Hero Section -->
-		<section id="hero" class="hero section dark-background">
+		<section id="hero-header" class="hero section dark-background">
+            <!-- <div class="bg-gradient-custom-rl-negro"></div> -->
+            <div class="bg-negro"></div>
 			<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 			<div class="container d-flex flex-column align-items-center">
-				<h2 data-aos="fade-up" data-aos-delay="100">Welcome to Rolling Barrel</h2>
+				<h1>Welcome to <span class="glitch-effect color-primario" data-text="Rolling Barrel">Rolling Barrel</span></h1>
 				<p data-aos="fade-up" data-aos-delay="200">Game development studio based in Barcelona</p>
 				<div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-					<a href="https://youtu.be/dQw4w9WgXcQ?si=t0BobfLaObBlv_9c" target="_blank" rel="nofollow"
-						class="glightbox btn-watch-video d-flex align-items-center"><i
-							class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
-					<a class="btn-get-started" href="https://github.com/RollingBarrel/Chrysalis/releases/latest"
-						target="_blank">Download Chrysalis</a>
+					<a class="glightbox btn-watch-video d-flex align-items-center me-3" href="https://youtu.be/dQw4w9WgXcQ?si=t0BobfLaObBlv_9c" target="_blank" rel="nofollow"><i class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+                    <a class="btn btn-big btn-primario-especial-br" href="https://github.com/RollingBarrel/Chrysalis/releases/latest" target="_blank"><span class="glitch-effect color-default" data-text="Download Chrysalis">Download Chrysalis</span></a>
 				</div>
 			</div>
 		</section>
@@ -56,20 +58,32 @@
 						<img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="About us">
 					</div>
 					<div class="col-lg-6 content align-self-center" data-aos="fade-up" data-aos-delay="100">
-						<h3>Rolling Barrel Team</h3>
+						<h3 class="titulo-badge"><span>About Us</span></h3>
+						<h3 class="titulo-badge-l"><span>About Us</span></h3>
+						<h3 class="titulo-badge-r"><span>About Us</span></h3>
 						<p>We are a team of passionate game developers, currently pursuing our Master's degree in Art
 							and Programming AAA Games
 							at the Universitat Politècnica de Catalunya (UPC). Our team is composed of students from
 							different parts of Spain and
 							around the world, united by our love for creating immersive gaming experiences.
 						</p>
-						<p class="mb-5">For the past eight months, we have been working on our first major project, <strong
+						<p>For the past eight months, we have been working on our first major project, <strong
 								class="color-accent">Chrysalis</strong> a top-down, action-packed hack and slash game
 							that combines shooting mechanics with unique abilities and a variety of ammunition types.
 							Our goal is to deliver fast-paced, exciting gameplay that
 							challenges and entertains players.
 						</p>
-						<a class="btn-rojo" href="#" target="_blank">Learn more</a>
+                        <a class="btn btn-primario">Hola a todos</a>
+                        <a class="btn btn-primario-especial-tl">Boton TL</a>
+                        <a class="btn btn-primario-especial-tr">Boton TR</a>
+                        <a class="btn btn-primario-especial-bl">Boton BL</a>
+                        <a class="btn btn-primario-especial-br">Boton BR</a>
+                        
+                        <a class="btn btn-primario-invert">Hola a todos</a>
+                        <a class="btn btn-primario-invert-especial-tl">Boton TL</a>
+                        <a class="btn btn-primario-invert-especial-tr">Boton TR</a>
+                        <a class="btn btn-primario-invert-especial-bl">Boton BL</a>
+                        <a class="btn btn-primario-invert-especial-br">Boton BR</a>
 					</div>
 				</div>
 		</section>
@@ -80,7 +94,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-						<h3>Chrysalis</h3>
+						<h3 class="underline-glitch-opacity">Chrysalis</h3>
+						<h3 class="underline-azul-verde">Chrysalis</h3>
 						<p class="fst-italic">
 							"An immersive and thrilling experience by Rolling Barrel Studio"
 						</p>
@@ -132,17 +147,13 @@
 					<!-- Service Item 1 -->
 					<div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
 						<a href="/game.html">
-							<div class="service-item">
+							<div class="more-info">
 								<div class="img">
 									<img src="assets/img/services-1.jpg" class="img-fluid" alt="">
 								</div>
 								<div class="details position-relative">
-									<div class="icon">
-										<i class="bi bi-activity"></i>
-									</div>
-									<h3>Game details</h3>
-									<p>Get more information about our latest release: <strong
-											class="color-accent">Chrysalis</strong></p>
+									<h3 class="glitch-effect" data-text="Rolling Barrel">Game details</h3>
+									<p>Get more information about our latest release: <strong class="color-accent">Chrysalis</strong></p>
 								</div>
 							</div>
 						</a>
@@ -150,15 +161,12 @@
 					<!-- Service Item 2 -->
 					<div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
 						<a href="/gallery.html">
-							<div class="service-item">
+							<div class="more-info">
 								<div class="img">
 									<img src="assets/img/services-2.jpg" class="img-fluid" alt="">
 								</div>
 								<div class="details position-relative">
-									<div class="icon">
-										<i class="bi bi-broadcast"></i>
-									</div>
-									<h3>Gallery</h3>
+									<h3 class="glitch-effect" data-text="Rolling Barrel">Gallery</h3>
 									<p>In-game screenshots of our projects</p>
 								</div>
 							</div>
@@ -167,15 +175,12 @@
 					<!-- Service Item 3 -->
 					<div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
 						<a href="/gallery.html">
-							<div class="service-item">
+							<div class="more-info">
 								<div class="img">
 									<img src="assets/img/services-3.jpg" class="img-fluid" alt="">
 								</div>
 								<div class="details position-relative">
-									<div class="icon">
-										<i class="bi bi-easel"></i>
-									</div>
-									<h3>Team</h3>
+									<h3 class="glitch-effect" data-text="Rolling Barrel">Team</h3>
 									<p>Know all the people that made this project happen</p>
 								</div>
 							</div>

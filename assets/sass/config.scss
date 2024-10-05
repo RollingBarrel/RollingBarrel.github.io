@@ -1,0 +1,163 @@
+// Variables
+// $default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$default-font: "Akshar", sans-serif;
+$heading-font: "BIGMACCA";
+$nav-font: "Inter", sans-serif;
+
+// Global Colors
+$background-color:      #ffffff;
+$default-color:         #444444;
+$heading-color:         #273d4e;
+$accent-color:          #ff4a17;
+$surface-color:         #ffffff;
+$contrast-color:        #ffffff;
+
+// Nav Menu Colors
+$nav-color:                     #e5eaee;
+$nav-hover-color:               $accent-color;
+$nav-mobile-background-color:   $background-color;
+$nav-dropdown-background-color: $background-color;
+$nav-dropdown-color:            $default-color;
+$nav-dropdown-hover-color:      #ff4a17;
+
+// Variables de colores para los temas claros y oscuros
+$light-background-color:    #f1f4fa;
+$dark-background-color:     #000910;
+$dark-surface-color:        #28323a;
+
+
+//COLORES CUSTOM
+$color-negro:           #000000;
+$color-gris-oscuro:     #192330;
+$color-gris:            #999999;
+$color-blanco:          #FFFFFF;
+
+$color-default:         #223644;
+
+$color-primario:        #3bfedf;
+$color-secundario:      #4d5e72;
+
+$color-alt-primario:    #36acf6;
+$color-alt-secundario:  #fc0f3e;
+$color-alt-terciario:   #fcff23;
+$color-alt-quaternario: #00ff80;
+
+
+@use "sass:meta";
+
+// Variables CSS nativas reescribiendo el Root
+:root {
+	--default-font: #{meta.inspect($default-font)};
+	--heading-font: #{meta.inspect($heading-font)};
+
+	--fuente-size-base: 15px;
+	--fuente-muy-peque: .7rem;
+
+	--color-negro: #{meta.inspect($color-negro)};
+	--color-gris-medio: #{meta.inspect($color-gris-oscuro)};
+	--color-gris-claro:#{meta.inspect($color-gris)};
+	--color-blanco:#{meta.inspect($color-blanco)};
+
+	--color-default:#{meta.inspect($color-default)};
+
+	--color-primario: #{meta.inspect($color-primario)};
+	--color-secundario: #{meta.inspect($color-secundario)};
+
+	--color-alt-primario: #{meta.inspect($color-alt-primario)};
+	--color-alt-secundario: #{meta.inspect($color-alt-secundario)};
+	--color-alt-terciario: #{meta.inspect($color-alt-terciario)};
+	--color-alt-quaternario: #{meta.inspect($color-alt-quaternario)};
+
+	--border-radius: .0;
+
+	--time: .2s;
+	--bs-gutter-x: 1.8rem;
+}
+
+
+// Declaramos los breakpoints por variables de SASS ya que si no, no las podemos usar en los @media
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xlg: 1200px;
+$breakpoint-xxl: 1400px;
+
+$breakpoint-hd: 1980px;
+$breakpoint-4k: 2600px;
+
+@font-face {
+    font-family: 'BIGMACCA';
+    src: url('../../fonts/BIGMACCA.eot');
+    src: url('../../fonts/BIGMACCA.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/BIGMACCA.woff2') format('woff2'),
+        url('../../fonts/BIGMACCA.woff') format('woff'),
+        url('../../fonts/BIGMACCA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+    font-family: var(--default-font);
+    color: var(--color-gris-medio);
+	font-size: var(--fuente-size-base);
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--default-font);
+	font-size: var(--fuente-size-base);
+	font-weight: 300;
+}
+
+section {
+	padding: 3rem 0;
+	position: relative;
+}
+footer{
+    background-color: var(--color-default);
+}
+table {
+	font-family: var(--default-font);
+	color: var(--color-gris-medio);
+	font-size: .9rem;
+}
+
+h1, h2, h3, h4 {
+	font-family: var(--heading-font);
+	letter-spacing: -1px;
+	margin-bottom: .5em;
+    font-weight: normal;
+}
+
+a {
+	color: $color-primario;
+	text-decoration: none;
+	transition: 0.3s;
+
+	&:hover {
+		color: color-mix(in srgb, $color-default, transparent 25%);
+		text-decoration: none;
+	}
+}
+
+:focus-visible,
+a:active,
+a:hover {
+    outline: 0;
+	outline: none;
+    text-decoration: none!important;
+}
+
+.btn:focus, a:focus
+{
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+    transition: all 0.3s;
+}

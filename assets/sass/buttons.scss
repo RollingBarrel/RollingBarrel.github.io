@@ -1,0 +1,142 @@
+//BUTTONS
+button, .btn{
+    // font-family: var(--default-font);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    // font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .6rem 1.5rem;
+    color: var(--color-blanco);
+    background-color: var(--color-primario);
+    border-radius: 0;
+    border: none;
+    // @include box-shadow();
+    @include transition();
+}
+
+.btn-big{
+    @extend .btn;
+    padding: 1rem 2rem;
+}
+
+.btn-small{
+    @extend .btn;
+    padding: .4rem 1rem;
+}
+
+
+.btn-primario {
+    @extend .btn;
+    @include button-styles($color-primario, $color-default, $color-secundario, $color-blanco);
+}
+.btn-primario-especial-tr {
+    @extend .btn-primario;
+    @extend .tr;
+}
+.btn-primario-especial-tl {
+    @extend .btn-primario;
+    @extend .tl;
+}
+.btn-primario-especial-br {
+    @extend .btn-primario;
+    @extend .br;
+}
+.btn-primario-especial-bl {
+    @extend .btn-primario;
+    @extend .bl;
+}
+
+
+.btn-primario-invert{
+    @extend .btn;
+    @include button-styles($color-secundario, $color-blanco, $color-primario, $color-default);
+}
+.btn-primario-invert-especial-tr {
+    @extend .btn-primario-invert;
+    @extend .tr;
+}
+.btn-primario-invert-especial-tl {
+    @extend .btn-primario-invert;
+    @extend .tl;
+}
+.btn-primario-invert-especial-br {
+    @extend .btn-primario-invert;
+    @extend .br;
+}
+.btn-primario-invert-especial-bl {
+    @extend .btn-primario-invert;
+    @extend .bl;
+}
+
+
+.btn-rojo{
+    @extend .btn;
+    @include button-styles($color-alt-secundario, $color-blanco, $color-primario, $color-blanco);
+}
+.btn-rojo-especial-tr {
+    @extend .btn-rojo;
+    @extend .tr;
+}
+.btn-rojo-especial-tl {
+    @extend .btn-rojo;
+    @extend .tl;
+}
+.btn-rojo-especial-br {
+    @extend .btn-rojo;
+    @extend .br;
+}
+.btn-rojo-especial-bl {
+    @extend .btn-rojo;
+    @extend .bl;
+}
+
+
+.btn-verde{
+    @extend .btn;
+    @include button-styles($color-alt-quaternario, $color-blanco, $color-default, $color-blanco);
+}
+.btn-verde-especial-tr {
+    @extend .btn-verde;
+    @extend .tr;
+}
+.btn-verde-especial-tl {
+    @extend .btn-verde;
+    @extend .tl;
+}
+.btn-verde-especial-br {
+    @extend .btn-verde;
+    @extend .br;
+}
+.btn-verde-especial-bl {
+    @extend .btn-verde;
+    @extend .bl;
+}
+
+
+.btn-get-started {
+    @extend .btn;
+    background: var(--color-primario);
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 25px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.btn-yt {
+    @extend .btn;
+    color: $contrast-color;
+    font-size: 13px;
+    padding: 7px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    border: 2px solid $contrast-color;
+    text-transform: uppercase;
+    &:hover {
+        background: $accent-color;
+        border-color: $accent-color;
+    }
+}
