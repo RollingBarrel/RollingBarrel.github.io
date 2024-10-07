@@ -5,12 +5,21 @@
     color: $color-blanco;
 }
 
+
+//HEADER
+header {
+    .sitename{
+        font-family: var(--special-font) !important;
+        font-size: 1.5rem;
+    }
+}
+
 //CARDS MORE INFORMATION
 //son las cards qe hay en la pagina home
 .more-info{
     overflow: hidden;
-    img{
-        // @extend .tl;
+    h3{
+        font-size: 2rem;
     }
     &:hover{
         img{
@@ -19,6 +28,7 @@
         .details{
             h3{
                 color: $color-alt-quaternario;
+                @include glitch-effect-mixin();
             }
         }
     }
@@ -36,25 +46,26 @@
 }
 
 .galeria-item {
-    background-color: #f4f4f4;
+    background-color: $color-default;
     padding: 10px;
-    border-radius: 8px;
+    // border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     &:hover {
-        transition: background-color .5s;
-        background-color: darken($color-blanco, 5%);
+        transition: all .5s;
+        background-color: lighten($color-default, 20%);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
         h4{
-            color: $color-alt-secundario !important;
+            color: $color-primario !important;
         }
         @media (min-width: $breakpoint-md) {
-            .img-team, span, .social {
+            .img-team, span, .social, h4 {
                 @include glitch-effect-mixin();
-            }
-            h4{
-                @include glitch-effect-mixin();
+
+                // Usamos el mixin para aplicar el delay a múltiples elementos
+                @include random-delay(0.2, 1);
             }
         }
     }
@@ -78,6 +89,7 @@
         padding: .5rem;
         margin-top: .5rem;
         h4 {
+            color: $color-blanco;
             @include transition(.5s);
             margin-bottom: 5px;
             font-family: $default-font;
@@ -89,10 +101,19 @@
         span {
             font-size: normal;
             font-size: 1rem;
-            color: $color-default;
+            color: $color-blanco;
         }
         .social{
             float: inline-end;
+            a{
+                color: $color-gris;
+                &:hover{
+                    color: $color-primario !important;
+                }
+            }
+            i{
+                font-size: 1.1rem;
+            }
         }
     }
 }

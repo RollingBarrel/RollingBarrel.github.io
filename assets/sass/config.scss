@@ -1,7 +1,8 @@
 // Variables
 // $default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $default-font: "Akshar", sans-serif;
-$heading-font: "BIGMACCA";
+$heading-font: "Akshar", sans-serif;
+$special-font: "BIGMACCA";
 $nav-font: "Inter", sans-serif;
 
 // Global Colors
@@ -49,6 +50,7 @@ $color-alt-quaternario: #00ff80;
 :root {
 	--default-font: #{meta.inspect($default-font)};
 	--heading-font: #{meta.inspect($heading-font)};
+	--special-font: #{meta.inspect($special-font)};
 
 	--fuente-size-base: 15px;
 	--fuente-muy-peque: .7rem;
@@ -129,7 +131,7 @@ h1, h2, h3, h4 {
 	font-family: var(--heading-font);
 	letter-spacing: -1px;
 	margin-bottom: .5em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 a {
