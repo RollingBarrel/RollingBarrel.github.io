@@ -24,6 +24,13 @@
     height: 100%;
 }
 
+// Mixin para generar un delay aleatorio entre 0.2s y 1s
+@mixin random-delay($min, $max) {
+    $randomValue: random($max * 1000 - $min * 1000) + $min * 1000; // Genera un valor aleatorio en milisegundos
+    $delay: $randomValue / 1000 + s; // Convierte a segundos
+    animation-delay: $delay; // Asigna el valor de delay calculado
+}
+
 // Mapa de ángulos
 $angles: (
     tl: 135deg,
@@ -201,3 +208,4 @@ $colors: (
         animation: noise-2 3s linear infinite alternate-reverse, glitch 5s infinite;
     }
 }
+

@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 			}
 			span {
 				font-size: 26px;
-				font-family: $heading-font;
+				font-family: $special-font;
 				color: $color-blanco;
 			}
 		}
@@ -152,11 +152,13 @@ h1, h2, h3, h4, h5, h6 {
 			justify-content: center;
 			align-items: center;
 			border-radius: 50%;
-			border: 1px solid color-mix(in srgb, $default-color, transparent 50%);
+			border: 1px solid color-mix(in srgb, $color-blanco, transparent 50%);
 			transition: 0.3s;
+
 			&:hover {
-				color: $color-alt-secundario;
-				border-color: $color-alt-secundario;
+				color: $color-negro;
+				background: $color-primario;
+				border-color: $color-primario;
 			}
 			&:first-of-type {
 				margin-left: 0;
@@ -167,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 	h4 {
+		font-family: $special-font;
 		color: $color-primario;
 		letter-spacing: .2rem;
 		font-size: 16px;
