@@ -126,7 +126,7 @@
             let content = `<div class="galeria-contenedor">`;
             data.forEach((person) => {
                 content += `<div class="galeria-item filter-${person.Filter}"> 
-					<div class="img-team"><img src="assets/img/team/team-placeholder.jpg" class="" alt=""></div>
+					<div class="img-team"><img src="assets/img/team/${person.Photo ? person.Photo : `team-placeholder.jpg`}" class="" alt=""></div>
 					<div class="miembro-info" data-text="ERROR"> 
 						<h4 class="miembro-nombre" data-text="CHRYSALIS">${person.Name}</h4>
 						<div class="miembro-detalles">

@@ -84,6 +84,7 @@
         }
         .miembro-detalles{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
         }
         span {
@@ -93,6 +94,7 @@
         }
         .social{
             float: inline-end;
+            align-self: flex-end !important;
         }
     }
 }

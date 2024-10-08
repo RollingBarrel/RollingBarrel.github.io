@@ -2463,6 +2463,7 @@ body:not(.index-page) .hero {
 }
 .galeria-item .miembro-info .miembro-detalles {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .galeria-item .miembro-info span {
@@ -2472,6 +2473,7 @@ body:not(.index-page) .hero {
 }
 .galeria-item .miembro-info .social {
   float: inline-end;
+  align-self: flex-end !important;
 }
 
 /*# sourceMappingURL=main.css.map */
