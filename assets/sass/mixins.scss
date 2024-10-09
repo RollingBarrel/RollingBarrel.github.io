@@ -120,14 +120,14 @@ $colors: (
 }
 
 //UNDERLINE CON "2 COLORES
-@mixin underline-gradient($color1, $color2) {
+@mixin underline-gradient($color1, $color2, $largada : 100%) {
     position: relative;
     &::after {
         content: "";
         position: absolute;
         left: 0;
         bottom: -3px; // Línea ubicada justo debajo del texto
-        width: 30%;
+        width: $largada;
         height: 5px;
         background: linear-gradient(to right, $color1, $color2); // Degradado con los colores recibidos
         z-index: -1;
@@ -208,4 +208,3 @@ $colors: (
         animation: noise-2 3s linear infinite alternate-reverse, glitch 5s infinite;
     }
 }
-
