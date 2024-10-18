@@ -32,51 +32,44 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section dark-background">
+        <section id="hero" class="hero">
             <img src="assets/img/page-title-bg.webp" alt="">
-            <div class="container d-flex flex-column align-items-center">
-                <a href="#galeria">
-                    <h1>Our Team</h1>
-                </a>
-            </div>
+            <div class="bg-absolute-negro"></div>
+            <div class="container d-flex flex-column align-items-left">
+				<p class="mini-titular">Team</p>
+				<h1 class="glitch-effect color-primario titular" data-text="Rolling Barrel">Rolling Barrel</h1>
+				<p data-aos="fade-up" data-aos-delay="200">Know more about Us</p>
+			</div>
         </section>
         <!-- /Hero Section -->
 
         <!-- Studio section -->
-        <!--
-        <section id="studio" class="container">
-            <h1 class="text-center mb-4">Studio</h1>
-            <div class="row align-items-start">
-                <div class="col">
-                    <img src="assets/img/logo.png" alt="">
-                </div>
-                <div id="studio-info" class="col">
-                    <h6>Game Name</h6>
-                    <p>Chrysalis</p>
-                    <h6>Release</h6>
-                    <p>8th November 2024</p>
-                    <h6>Platforms</h6>
-                    <p>PC</p>
-                    <h6>Gender</h6>
-                    <p>Shooter, 3rd person</p>
-                    <h6>Developer</h6>
-                    <p>Rolling Barrel Studio</p>
-                    <h6>Location</h6>
-                    <p>Barcelona, Spain</p>
-                </div>
-                <div id="game-details" class="col">
-                    <h6>Description</h6>
-                    <p></p>
-                    <h6>Unique features</h6>
-                    <p></p>
-                    <h6>Story</h6>
-                    <p></p>
-                    <h6></h6>
-                    <p></p>
-                </div>
+        <section id="studio-info" class="bg-blanco border-primario-b border-primario-t py-5">
+			<div class="container color-negro">
+				<div class="contenedor-flex-horizontal">
+					<div class="container title ">
+						<p class="mini-titular">About Us</p>
+						<h2 class="titular color-default w-25">Rolling Barrel Team</h2>
+					</div>
+					<div class="container p-3">
+						<p>Chrysalis is a top-down action-packed hack and slash set in a high-tech sci-fi laboratory,
+							where an energy extraction experiment has gone
+							catastrophically wrong. As the head of security, you must traverse through multiple levels
+							of the facility to save your wife—the head
+							scientist—who has become trapped deep within the complex after a violent disturbance.
+						</p>
+						<p>Chrysalis is a top-down action-packed hack and slash set in a high-tech sci-fi laboratory,
+							where an energy extraction experiment has gone
+							catastrophically wrong. As the head of security, you must traverse through multiple levels
+							of the facility to save your wife—the head
+							scientist—who has become trapped deep within the complex after a violent disturbance.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!-- /Studio section -->
 
-            </div>
-             -->
 
         </section>
 
@@ -84,13 +77,13 @@
 
         <!-- Gallery Section -->
         <section id="galeria" class="container">
-            <h1 class="text-center">Team</h1>
+            <h1 class="text-center titular">Team</h1>
             <div class="layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <ul class="gallery-filters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-artist">Artists</li>
-                    <li data-filter=".filter-programmer">Programmers</li>
-                </ul>
+                <div class="gallery-filters botones-linea-primario pb-5 mb-0">
+                    <a data-filter="*" class="filter-active">All</a>
+                    <a data-filter=".filter-artist">Artists</a>
+                    <a data-filter=".filter-programmer">Programmers</a>
+                </div>
 
                 <div id="gallery-placeholder">
                     <!-- Items will be dynamically added here -->
@@ -125,7 +118,7 @@
     <script>
         // Function to create the gallery
         function createGallery(data) {
-            let content = `<div class="galeria-contenedor">`;
+            let content = `<div class="galeria-contenedor border-primario-t pt-5">`;
             data.forEach((person) => {
                 content += `<div class="galeria-item filter-${person.Filter}"> 
 					<div class="img-team"><img src="assets/img/team/${person.Photo ? person.Photo : `team-placeholder.jpg`}" class="" alt=""></div>
@@ -150,11 +143,11 @@
         }
 
         function addFilterLogic() {
-            var filterButtons = document.querySelectorAll('.gallery-filters li');
+            var filterButtons = document.querySelectorAll('.gallery-filters a');
             filterButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     // Set active
-                    var activeFilter = document.querySelector('li.filter-active')
+                    var activeFilter = document.querySelector('a.filter-active')
                     if (activeFilter) {
                         activeFilter.classList.remove("filter-active");
                     }

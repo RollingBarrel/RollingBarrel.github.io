@@ -36,236 +36,507 @@
 
 		<!-- Hero Section -->
 		<section id="hero" class="hero section dark-background">
-			<div class="bg-negro"></div>
+            <!-- <div class="bg-gradient-custom-rl-negro"></div> -->
+            <div class="bg-absolute-negro"></div>
 			<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-			<div class="container d-flex flex-column align-items-center">
-				<h2 data-aos="fade-up" data-aos-delay="100">Game Details</h2>
-				<p data-aos="fade-up" data-aos-delay="200">Unleash the Knowledge</p>
-				<div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-					<a href="#game-info" class="btn-primario-especial-tr">Details</a>
-				</div>
+			<div class="container d-flex flex-column align-items-left">
+				<h1 class="titular" data-aos="fade-up" data-aos-delay="100">Game Details</h1>
+				<p class="mini-titular"data-aos="fade-up" data-aos-delay="200">Unleash the Knowledge</p>
 			</div>
-		</section>
-		<!-- /Hero Section -->
-		
-		<!-- Game info -->
-		<section id="game-info" class="game-info section">
-		<div class="container text-center">
-			<h2 class="bigmacca glitch-effect" data-text="Chrysalis">Chrysalis</h2>
-			<div class="game-detalles">
-				<p class=""><span class="fw-bold">Release Date: </span class="fw-bold">November 08th, 2024</p>
-				<p class=""><span class="fw-bold">Genres: </span class="fw-bold">Top down shooter | Hack & Slash</p>
-					<p class=""><span class="fw-bold">Platform: </span class="fw-bold">PC</p>
+			<div class="botones-header-home d-flex mt-4">
+				<a class="glightbox btn-watch-video d-flex align-items-center me-3" href="https://youtu.be/dQw4w9WgXcQ?si=t0BobfLaObBlv_9c" target="_blank" rel="nofollow"><i class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+				<a class="btn btn-big btn-primario-especial-br" href="https://github.com/RollingBarrel/Chrysalis/releases/latest" target="_blank"><span class="glitch-effect color-default" data-text="Download Chrysalis">Download Chrysalis</span></a>
 			</div>
-			<div class="game-detalles">
-				<p class=""><span class="fw-bold">Developer: </span class="fw-bold">Rolling Barrels</p>
-				<p class=""><span class="fw-bold">Gameplay Pillars: </span class="fw-bold">Game Pillar 1 | Game Pillar 2 | Game Pillar 3</p>
-			</div>
-		</div>
-		
 		</section>
 
-		<!-- About Game Section -->
-		<section id="about-game" class="about section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 px-4">
-						<h2>Synopsis</h2>
-						<!-- <p class="fst-italic">
-							"An immersive and thrilling experience by Rolling Barrel Studio"
-						</p> -->
-						<p>
-							In a distant future, the head of security at a research facility on a remote planet faces an unforeseen threat. The facility has been extracting 
-							a mysterious energy from the planet’s core, an ancient entity, aiming to replace depleting energy sources.
-						</p>
-						<p>
-							After a devastating quake, his wife, 
-							the head scientist, becomes trapped in the lower levels. As he descends to rescue her, the protagonist battles corrupted security robots and mutated 
-							test subjects that have escaped. Upon reaching the core, he discovers his wife has been corrupted by the entity, forcing him to make a final, crucial decision.
-						</p>
-						<!-- <ul class="list-unstyled">
-							<li><i class="bi bi-check2-all color-accent"></i> High-octane hack and slash combat with
-								top-down shooting mechanics.</li>
-							<li><i class="bi bi-check2-all color-accent"></i> Face a variety of enemies, from security
-								robots to mutated monsters.</li>
-							<li><i class="bi bi-check2-all color-accent"></i> Uncover a gripping narrative set in a
-								dystopian sci-fi world.</li>
-							<li><i class="bi bi-check2-all color-accent"></i> Battle against powerful bosses that will
-								test your skills and strategy.</li>
-						</ul> -->
-					</div>
-					<div class="col-lg-6 order-1 order-lg-2 text-center img-como-bgd">
-						<img class="image" src="assets/img/game/conversation_chat.jpg" alt="Chrysalis Game">
-					</div>
-				</div>
+		<section id="selectores-game" class="pb-0">
+			<div class="botones-linea-primario" id="myTab" role="tablist">
+				<a class="nav-link active" id="game-tab" data-bs-toggle="tab" data-bs-target="#game-tab-pane" type="button" role="tab" aria-controls="game-tab-pane" aria-selected="true">Game</a>
+				<a class="nav-link" id="characters-tab" data-bs-toggle="tab" data-bs-target="#characters-tab-pane" type="button" role="tab" aria-controls="characters-tab-pane" aria-selected="false">Characters</a>
+				<a class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features-tab-pane" type="button" role="tab" aria-controls="features-tab-pane" aria-selected="false">Features</a>
+				<a class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery-tab-pane" type="button" role="tab" aria-controls="gallery-tab-pane" aria-selected="false">Gallery</a>
+				<a class="nav-link" id="presskit-tab" data-bs-toggle="tab" data-bs-target="#presskit-tab-pane" type="button" role="tab" aria-controls="presskit-tab-pane" aria-selected="false">Press Kit</a>
 			</div>
 		</section>
-		<section id="characters-game" class="about section">
-			<div class="container">
-				<h2 class="bigmacca mb-5">Characters</h2>
-				<!-- MC -->
-				<div class="row">
-					<div class="col-12 col-md-7 px-5 ">
-						<h3 class="">Elios</h3>
-						<p>As the head of security for the facility, the protagonist is highly trained in combat, tactics, and security protocols. 
-							His mission is to rescue his wife, the head scientist, but as he ventures deeper into the facility, he is forced to confront 
-							not only external threats but also his personal connection to the mysterious energy at the core of the planet.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>-</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>-</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>-</li>
-						</ul>
+
+		<section id="contenido-game" class="pb-0">
+			<div class="tab-content" id="myTabContent">
+				<!-- TAB CON INFO DEL JUEGO -->
+				<div class="tab-pane fade show active" id="game-tab-pane" role="tabpanel" aria-labelledby="game-tab" tabindex="0">
+					<!-- SPECS DEL JUEGO -->
+					<div class="container">
+						<div id="game-info" class="text-center py-5">
+							<h2 class="titular glitch-effect" data-text="Chrysalis">Chrysalis</h2>
+							<div class="game-detalles">
+								<p class=""><span class="fw-bold">Release Date: </span class="fw-bold">November 08th, 2024</p>
+									<p class=""><span class="fw-bold">Genres: </span class="fw-bold">Top down shooter | Hack & Slash</p>
+										<p class=""><span class="fw-bold">Platform: </span class="fw-bold">PC</p>
+							</div>
+							<div class="game-detalles">
+								<p class=""><span class="fw-bold">Developer: </span class="fw-bold">Rolling Barrels</p>
+									<p class=""><span class="fw-bold">Gameplay Pillars: </span class="fw-bold">Game Pillar 1 | Game Pillar 2 | Game Pillar 3</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-12 col-md-5 order-1">
-						<img class="image" src="assets/img/game/initial_zone_01.jpg" alt="">
+					<!-- SINOPSIS -->
+					<div class="container-fluid bg-blanco border-primario-t border-primario-b">
+						<div class="container-big color-negro about py-5">
+							<div class="contenedor-flex-horizontal">
+								<div class="p-3">
+									<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-secundario-r border-secundario-b" alt="About us">
+								</div>
+								<div class="content px-3 py-5">
+									<h3 class="titulo-badge-l"><span>Synopsis</span></h3>
+									<p>
+										In a distant future, the head of security at a research facility on a remote planet faces an unforeseen threat. The facility has been extracting 
+										a mysterious energy from the planet’s core, an ancient entity, aiming to replace depleting energy sources.
+									</p>
+									<p>
+										After a devastating quake, his wife, 
+										the head scientist, becomes trapped in the lower levels. As he descends to rescue her, the protagonist battles corrupted security robots and mutated 
+										test subjects that have escaped. Upon reaching the core, he discovers his wife has been corrupted by the entity, forcing him to make a final, crucial decision.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<!-- BOSS -->
-				<div class="row">
-					<div class="col-12 col-md-7 order-2 px-5">
-						<h3 class="">Chrysalis</h3>
-						<p>Formerly the head of research, Chrysalis is now a fusion of her human form and the ancient energy entity. Her body has transformed, with 
-							pulsating energy and corrupted machinery woven into her being. She represents the final test of the protagonist's strength, wielding both 
-							power and sorrow in a terrifying amalgamation of science and the unknown.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Corporate soldier</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Hard-Wired Gear</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Relentless and unstoppable</li>
-						</ul>
+					<!-- FEATURES -->
+					<div class="container py-5">
+						<div class="container-fluid">
+							<div class="">
+								<div class="container title text-center">
+									<!-- <p class="mini-titular">Latest Projects</p> -->
+									<h2 class="titular  underline-azul-verde">Features / Experience</h2>
+								</div>
+								<div class="">
+									<img src="../assets/img/game/enemies_03_trap_03.jpg" alt="Chrysalis Game" class="image">
+								</div>
+								<div class="container py-5">
+									<p>
+										Chrysalis is a top-down action-packed hack and slash set in a high-tech sci-fi laboratory,
+										where an energy extraction experiment has gone
+										catastrophically wrong. As the head of security, you must traverse through multiple levels
+										of the facility to save your wife—the head
+										scientist—who has become trapped deep within the complex after a violent disturbance.
+									</p>
+									<ul class="list-unstyled" style="column-count: 4;">
+										<li class="fst-italic">
+											<img class="mb-3" src="/assets/img/game/enemies_03_trap_01.jpg" alt="">
+											High-octane hack and slash combat with
+											top-down shooting mechanics.</li>
+										<li class="fst-italic">
+											<img class="mb-3" src="/assets/img/game/enemies_03_trap_01.jpg" alt="">
+											Face a variety of enemies, from security
+											robots to mutated monsters.</li>
+										<li class="fst-italic">
+											<img class="mb-3" src="/assets/img/game/enemies_03_trap_01.jpg" alt="">
+											Uncover a gripping narrative set in a
+											dystopian sci-fi world.</li>
+										<li class="fst-italic">
+											<img class="mb-3" src="/assets/img/game/enemies_03_trap_01.jpg" alt="">
+											Battle against powerful bosses that will
+											test your skills and strategy.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-12 col-md-5">
-						<img class="image" src="assets/img/game/enemies_05_boss_02.jpg" alt="">
-					</div>
-				</div>
-				<!-- EdgeGuard -->
-				<div class="row">
-					<div class="col-12 col-md-7 px-5">
-						<h3 class="">EdgeGuard</h3>
-						<p>A humanoid security robot designed for close-quarters combat. The Edgeguard is equipped with a massive, energy blade integrated into one arm, 
-							which it uses to strike swiftly and decisively at any intruder. Its robust design and AI-driven combat system make it a formidable opponent in narrow corridors and enclosed spaces.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Slashing Mech</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Relentless and unstoppable</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Corporate soldier</li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-5 order-1">
-						<img class="image" src="assets/img/game/enemies_01_robot_melee.jpg" alt="">
-					</div>
-				</div>
-				<!-- Neutralizer Vanguard -->
-				<div class="row">
-					<div class="col-12 col-md-7 order-2 px-5">
-						<h3 class="">Neutralizer Vanguard</h3>
-						<p>A ranged security robot similar in design to a bipedal walker, reminiscent of ancient war machines. The Neutralizer Vanguard is 
-							heavily armed, with long-range blasters capable of tracking and eliminating targets from afar. Its primary function is to suppress 
-							and neutralize threats before they can get too close to vital areas.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Corporate soldier</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Hard-Wired Gear</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Relentless and unstoppable</li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-5">
-						<img class="image" src="assets/img/game/enemies_06_neutralizer-vanguard.jpg" alt="">
-					</div>
-				</div>
-				<!-- BLASTBALL -->
-				<div class="row">
-					<div class="col-12 col-md-7 px-5">
-						<h3 class="">BlastBall</h3>
-						<p>The Blastball is a small, spherical enemy designed for a single purpose: to pursue and eliminate its target through self-detonation. 
-							Equipped with sophisticated tracking sensors, it locks onto its prey and relentlessly chases them down. Once within range, it primes itself 
-							and detonates in a massive explosion, causing catastrophic damage to anything in the vicinity
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Innovative Tech</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Big Blast</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>1 Objective: YOU</li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-5 order-1">
-						<img class="image" src="assets/img/game/enemies_02_blastbball.jpg" alt="">
-					</div>
-				</div>
-				<!-- Bonepiercers  -->
-				<div class="row">
-					<div class="col-12 col-md-7 order-2 px-5">
-						<h3 class="">Bonepiercers</h3>
-						<p>Once human test subjects, the Bonepiercers have mutated into grotesque creatures, their bones erupting from their bodies and forming deadly spear-like appendages. 
-							These floating entities have a single large eye in the center of their faces, which glows with an eerie orange light as they hunt down intruders.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Quick & lethal</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Fast Approaching</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Short-Tempered</li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-5">
-						<img class="image" src="assets/img/game/enemies_04_bone-piercer.jpg" alt="">
+					<!-- GAMEPLAY -->
+					<div class="container-fluid border-primario-t border-primario-b">
+						<div class="container-big about py-5">
+							<div class="contenedor-flex-horizontal">
+								<div class="p-3">
+									<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-secundario-r border-secundario-b" alt="About us">
+								</div>
+								<div class="content px-3 py-5">
+									<span class="mini-titular">Watch the complete trailer and</span>
+									<h3 class="titular">stay tuned to our social media</h3>
+									<a class="btn btn-primario-especial-br">Boton BR</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- Gazeweepers -->
-				<div class="row">
-					<div class="col-12 col-md-7 px-5">
-						<h3 class="">Gazeweepers</h3>
-						<p>A variant of the Bonepiercer, the Gazeweeper has further mutated, with its flesh turning a sickly purple and its bone structure glowing a toxic green. 
-							Instead of relying on melee attacks, it uses its large central eye to fire concentrated laser beams, making it a deadly ranged foe.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Dazzling Sniper Gaze</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Filled with blind rage</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Fast & Deadly</li>
-						</ul>
+				<!-- TAB DETALLES DE LOS PJ Y NPC -->
+				<div class="tab-pane fade" id="characters-tab-pane" role="tabpanel" aria-labelledby="characters-tab" tabindex="0">
+					<div class="container-peque">
+						<span class="mini-titular">Our</span>
+						<h2 class="titular underline-azul-verde">Characters</h2>
 					</div>
-					<div class="col-12 col-md-5 order-1">
-						<img class="image" src="assets/img/game/enemies_07_gaze-weeper.jpg" alt="">
+					<div id="carouselExample" class="carousel slide bg-gris py-5" data-bs-ride="true">
+						<div class="carousel-inner container">
+							<div class="carousel-item active">
+								<!-- MC -->
+								<div class="character-item">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/initial_zone_01.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>MC</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">We're no strangers to love You know the rules and so do I (do I) A full commitment's what I'm thinking of
+													You wouldn't get this from any other guy I just wanna tell you how I'm feeling Gotta make you understand Never gonna give you up
+													Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-verde">Characteristics</p>
+												<ul class="m-0">
+													<li>Punto 1</li>
+													<li>Punto 2</li>
+													<li>Punto 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!-- BOSS -->
+								<div class="character-item enemy">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/enemies_05_boss_02.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>Chrysalis</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">Formerly the head of research, Chrysalis is now a fusion of her human form and the ancient energy entity. Her body has transformed, with 
+													pulsating energy and corrupted machinery woven into her being. She represents the final test of the protagonist's strength, wielding both 
+													power and sorrow in a terrifying amalgamation of science and the unknown
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+												<ul class="m-0">
+													<li>I</li>
+													<li>Dont</li>
+													<li>Know</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!-- EdgeGuard -->
+								<div class="character-item enemy">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/enemies_01_robot_melee.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>EdgeGuard</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">A humanoid security robot designed for close-quarters combat. The Edgeguard is equipped with a massive, energy blade integrated into one arm, 
+													which it uses to strike swiftly and decisively at any intruder. Its robust design and AI-driven combat system make it a formidable opponent in narrow corridors 
+													and enclosed spaces.
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+												<ul class="m-0">
+													<li>Slashing Mech</li>
+													<li>Relentless and unstoppable</li>
+													<li>Corporate soldier</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!-- Neutralizer Vanguard -->
+								<div class="character-item enemy">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/enemies_06_neutralizer-vanguard.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>Neutralizer Vanguard</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">A ranged security robot similar in design to a bipedal walker, reminiscent of ancient war machines. The Neutralizer Vanguard is 
+													heavily armed, with long-range blasters capable of tracking and eliminating targets from afar. Its primary function is to suppress 
+													and neutralize threats before they can get too close to vital areas.
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+												<ul class="m-0">
+													<li>Corporate soldier</li>
+													<li>Hard-Wired Gear</li>
+													<li>Relentless and unstoppable</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div class="carousel-item">
+								<!-- BlastBall -->
+								<div class="character-item enemy">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/enemies_02_blastbball.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>BlastBall</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">The Blastball is a small, spherical enemy designed for a single purpose: to pursue and eliminate its target through self-detonation. 
+													Equipped with sophisticated tracking sensors, it locks onto its prey and relentlessly chases them down. Once within range, it primes itself 
+													and detonates in a massive explosion, causing catastrophic damage to anything in the vicinity.
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+												<ul class="m-0">
+													<li>Innovative Tech</li>
+													<li>Big Blast</li>
+													<li>1 Objective: YOU</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!-- Bonepiercers -->
+								<div class="character-item enemy">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/enemies_04_bone-piercer.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>Bonepiercers</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">Once human test subjects, the Bonepiercers have mutated into grotesque creatures, their bones erupting from their bodies and forming deadly spear-like appendages. 
+													These floating entities have a single large eye in the center of their faces, which glows with an eerie orange light as they hunt down intruders.
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+												<ul class="m-0">
+													<li>Quick & lethal</li>
+													<li>Fast Approaching</li>
+													<li>Short-Tempered</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!-- Gazeweepers -->
+								<div class="character-item enemy">
+									<div class="character-imagen img-como-bgd">
+										<img src="assets/img/game/enemies_07_gaze-weeper.jpg" class="image" alt="About us">
+									</div>
+									<div class="character-contenedor p-5">
+										<div class="character-contenido p-3 pb-md-5">
+											<div class="titulares">
+												<h3>Gazeweepers</h3>
+											</div>
+											<div class="puntos-destacados">
+												<p class="mb-0">A variant of the Bonepiercer, the Gazeweeper has further mutated, with its flesh turning a sickly purple and its bone structure glowing a toxic green. 
+													Instead of relying on melee attacks, it uses its large central eye to fire concentrated laser beams, making it a deadly ranged foe.
+												</p>
+											</div>
+										</div>
+										<div class="character-features p-3">
+											<div class="">
+												<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+												<ul class="m-0">
+													<li>Dazzling Sniper Gaze</li>
+													<li>Filled with blind rage</li>
+													<li>Fast & Deadly</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
 				</div>
-				<!-- Electric Trap -->
-				<div class="row">
-					<div class="col-12 col-md-7 order-2 px-5">
-						<h3 class="">Electric Trap</h3>
-						<p>A containment method installed at the lower levels of the laboratory, to avoid the free movement of creatures around.
-							Pity is it's also deadly for humans.
-						</p>
-						<span>Characteristics:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Electric Shock</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Fixed position</li>
-						</ul>
+				<!-- TAB FEATURED -->
+				<div class="tab-pane fade" id="features-tab-pane" role="tabpanel" aria-labelledby="features-tab" tabindex="0">
+					<div class="container-peque">
+						<h2 class="titular underline-azul-verde">Features</h2>
 					</div>
-					<div class="col-12 col-md-5">
-						<img class="image" src="assets/img/game/enemies_03_trap_02.jpg" alt="">
+					<div class="container">
+						<!-- Electric Trap -->
+						<div class="character-item enemy">
+							<div class="character-imagen img-como-bgd">
+								<img src="assets/img/game/enemies_03_trap_02.jpg" class="image" alt="About us">
+							</div>
+							<div class="character-contenedor p-5">
+								<div class="character-contenido p-3 pb-md-5">
+									<div class="titulares">
+										<h3>Electric Trap</h3>
+									</div>
+									<div class="puntos-destacados">
+										<p class="mb-0">A containment method installed at the lower levels of the laboratory, to avoid the free movement of creatures around.
+											Pity is it's also deadly for humans.
+										</p>
+									</div>
+								</div>
+								<div class="character-features p-3">
+									<div class="">
+										<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+										<ul class="m-0">
+											<li>Electric Shock</li>
+											<li>Fixed position</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Upgrades -->
+						<div class="character-item enemy">
+							<div class="character-imagen img-como-bgd">
+								<img src="assets/img/game/sanity_upgrades_01.jpg" class="image" alt="About us">
+							</div>
+							<div class="character-contenedor p-5">
+								<div class="character-contenido p-3 pb-md-5">
+									<div class="titulares">
+										<h3>Upgrades</h3>
+									</div>
+									<div class="puntos-destacados">
+										<p class="mb-0">Every time a zone is cleared of enemies, an upgrade module is found.
+											Elios can choose to upgrade one of his physical characteristics.
+										</p>
+									</div>
+								</div>
+								<div class="character-features p-3">
+									<div class="">
+										<p class="text-uppercase underline-azul-rojo">Characteristics</p>
+										<ul class="m-0">
+											<li>Damage +10%</li>
+											<li>Health +10%</li>
+											<li>Speed +10%</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- Upgrades -->
-				<div class="row">
-					<div class="col-12 col-md-7 px-5">
-						<h3 class="">Upgrades</h3>
-						<p>Every time a zone is cleared of enemies, an upgrade module is found.
-							Elios can choose to upgrade one of his physical characteristics.
-						</p>
-						<span>Chose between upgrading:</span>
-						<ul>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Damage +10%</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Health +10%</li>
-							<li><i class="fa fa-exclamation-triangle me-3" aria-hidden="true"></i>Speed +10%</li>
-						</ul>
+				<!-- TAB GALLERY -->
+				<div class="tab-pane fade py-5" id="gallery-tab-pane" role="tabpanel" aria-labelledby="gallery-tab" tabindex="0">
+					<div class="container">
+						<div class="contenedor-grid">
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+							<div class="item-galeria">
+								<a href="assets/img/game/initial_zone_01.jpg" data-gallery="gallery-gallery-app" class="glightbox preview-link"></a>
+								<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-primario-r border-primario-b" alt="About us">
+							</div>
+						</div>
 					</div>
-					<div class="col-12 col-md-5 order-1">
-						<img class="image" src="assets/img/game/sanity_upgrades_01.jpg" alt="">
+				</div>
+
+				<!-- TAB PRESSKIT -->
+				<div class="tab-pane fade" id="presskit-tab-pane" role="tabpanel" aria-labelledby="presskit-tab" tabindex="0">
+					<div class="container-fluid bg-blanco border-primario-t border-primario-b">
+						<!-- SINOPSIS -->
+						<div class="container-big color-negro about py-5">
+							<div class="contenedor-flex-horizontal">
+								<div class="p-3">
+									<img src="assets/img/game/initial_zone_01.jpg" class="img-fluid rounded mb-4 border-secundario-r border-secundario-b" alt="About us">
+								</div>
+								<div class="content px-3 py-5">
+									<h3 class="titular color-default"><span>Presskit</span></h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda architecto cumque facere, fuga necessitatibus vel quibusdam in laborum 
+										dolore non esse incidunt odio maxime ut hic, laudantium inventore ipsa?.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda architecto cumque facere, fuga necessitatibus vel quibusdam in laborum 
+										dolore non esse incidunt odio maxime ut hic, laudantium inventore ipsa?.
+									</p>
+									<a class="btn btn-primario-especial-br">Boton BR</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -3,6 +3,106 @@
     letter-spacing: normal;
 }
 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	padding: 80px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.container {
+		position: relative;
+		z-index: 3;
+	}
+	&:before {
+		content: "";
+		background: color-mix(in srgb, var(--background-color), transparent 30%);
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	
+	p {
+		color: color-mix(in srgb, var(--default-color), transparent 20%);
+		margin: 10px 0 0 0;
+		font-size: 24px;
+	}
+
+	img {
+		position: absolute;
+		inset: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+
+	// BOTONES CABECERA
+	.btn-get-started {
+		background: var(--accent-color);
+		color: var(--contrast-color);
+		font-weight: 400;
+		font-size: 14px;
+		letter-spacing: 1px;
+		display: inline-block;
+		margin-left: 25px;
+		padding: 10px 30px;
+		border-radius: 4px;
+		transition: 0.3s;
+		text-transform: uppercase;
+		&:hover {
+			background: color-mix(in srgb, var(--accent-color), transparent 20%);
+		}
+	}
+	.btn-watch-video {
+		font-size: 16px;
+		transition: 0.5s;
+		font-weight: 400;
+		color: var(--default-color);
+		i {
+			color: var(--accent-color);
+			font-size: 32px;
+			transition: 0.3s;
+			line-height: 0;
+			margin-right: 8px;
+		}
+		&:hover {
+			color: var(--accent-color);
+			i {
+				color: color-mix(in srgb, var(--accent-color), transparent 20%);
+			}
+		}
+	}
+
+}
+
+body:not(.index-page) .hero {
+	min-height: 65vh;
+}
+
+
+@media (max-width: 768px) {
+	.hero{
+		h2 {
+			font-size: 32px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+}
 
 #hero-header{
     h1, h2, h3, h4, h5, h6 {
@@ -11,12 +111,45 @@
     color: $color-blanco;
 }
 
+.titular{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+}
+.mini-titular{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1px;
+    padding: 0;
+    margin: 1rem 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
 
 //HEADER
 header {
     .sitename{
         font-family: var(--special-font) !important;
         font-size: 1.5rem;
+    }
+}
+
+// HEAD HOME
+.botones-header-home {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 2;
+}
+
+
+
+// ABOUT HOME
+#about-game{
+    .img-como-bgd{
+        height: 30rem;
     }
 }
 
@@ -45,41 +178,30 @@ header {
 
 
 // CARDS GALERIA TEAM
+
+
+
 .galeria-contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); /* 4 columnas por fila como máximo */
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     gap: 2rem; /* Espacio entre los items */
+
 }
 
 .galeria-item {
-    background-color: $color-default;
+    background-color: $color-secundario;
     padding: 10px;
-    // border-radius: 8px;
+    border-radius: 2px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &:hover {
-        transition: all .5s;
-        background-color: lighten($color-default, 20%);
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
-        h4{
-            color: $color-primario !important;
-        }
-        @media (min-width: $breakpoint-md) {
-            .img-team, span, .social, h4 {
-                @include glitch-effect-mixin();
-
-                // Usamos el mixin para aplicar el delay a múltiples elementos
-                @include random-delay(0.2, 1);
-            }
-        }
-    }
     .img-team {
         position: relative;
         width: 100%;
         padding-top: 100%; /* Para hacerla cuadrada */
         overflow: hidden;
+        transition: all .3s ease;
         img {
             position: absolute;
             top: 0;
@@ -89,7 +211,7 @@ header {
             object-fit: cover;
         }
     }
-
+    
     .miembro-info {
         width: 100%;
         padding: .5rem;
@@ -124,6 +246,26 @@ header {
             }
         }
     }
+    &:hover {
+        transition: all .5s;
+        background-color: lighten($color-default, 20%);
+        box-shadow: 0px 2px 20px -5px $color-gris;
+        h4{
+            color: $color-primario !important;
+        }
+        .img-team{
+            box-shadow: 0 1px 10px 5px #3bfedf40;
+            img{
+            }
+        }
+        @media (min-width: $breakpoint-md) {
+            .img-team, .social, h4 {
+                @include glitch-effect-mixin();
+                // Usamos el mixin para aplicar el delay a múltiples elementos
+                @include random-delay(0.2, 1);
+            }
+        }
+    }
 }
 // @media (min-width: $breakpoint-md) {
     .galeria-item {
@@ -146,7 +288,7 @@ header {
     }
 }
 
-#characters-game{
+#characters-tab-pane{
     .row{
         border: none;
         @media (min-width: $breakpoint-md) {
@@ -159,7 +301,7 @@ header {
         }
     }
     h2{
-        @include underline-gradient($color-default, $color-alt-secundario, 30%);
+        @include underline-gradient($color-primario, $color-default, 30%);
     }
     .row:not(:last-child){
         margin-bottom: 4rem;

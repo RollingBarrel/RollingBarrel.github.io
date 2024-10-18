@@ -46,6 +46,7 @@ $color-alt-quaternario: #00ff80;
 
 @use "sass:meta";
 
+
 // Variables CSS nativas reescribiendo el Root
 :root {
 	--default-font: #{meta.inspect($default-font)};
@@ -112,6 +113,8 @@ body {
     font-family: var(--default-font);
 	font-size: var(--fuente-size-base);
 	font-weight: 300;
+	background-color: $color-gris-oscuro;
+	color: $color-blanco;
 }
 
 section {
@@ -128,10 +131,11 @@ table {
 }
 
 h1, h2, h3, h4 {
-	font-family: var(--heading-font);
+	font-family: var(--default-font);
 	letter-spacing: -1px;
 	margin-bottom: .5em;
     font-weight: bold;
+	color: var(--color-primario);
 }
 
 a {

@@ -1,9 +1,9 @@
 //BUTTONS
 button, .btn{
     // font-family: var(--default-font);
-    font-family: var(--special-font);
+    font-family: var(--default-font);
     font-size: 1rem;
-    // font-weight: normal;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: .6rem 1.5rem;
@@ -138,5 +138,24 @@ button, .btn{
     &:hover {
         background: $accent-color;
         border-color: $accent-color;
+    }
+}
+
+
+.botones-linea-primario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    a {
+        @extend .btn-primario;
+        display: inline-block;
+        padding: 1rem !important;
+        &:first-child{
+            @extend .btn-primario-especial-tl;
+        }
+        &:last-child{
+            @extend .btn-primario-especial-br;
+        }
     }
 }

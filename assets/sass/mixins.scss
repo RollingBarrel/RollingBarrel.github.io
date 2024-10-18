@@ -1,5 +1,5 @@
 // Mixins
-
+@use "sass:math";
 @mixin transition($duration: 0.3s) {
 	transition: all $duration !important;
 }
@@ -27,7 +27,7 @@
 // Mixin para generar un delay aleatorio entre 0.2s y 1s
 @mixin random-delay($min, $max) {
     $randomValue: random($max * 1000 - $min * 1000) + $min * 1000; // Genera un valor aleatorio en milisegundos
-    $delay: $randomValue / 1000 + s; // Convierte a segundos
+    $delay: math.div($randomValue, 1000) + s; // Convierte a segundos usando math.div()
     animation-delay: $delay; // Asigna el valor de delay calculado
 }
 
@@ -44,6 +44,14 @@ $directions: (
     rl: 46deg
 );
 
+
+$lados: (
+    l: left,
+    r: right,
+    t: top,
+    b: bottom,
+);
+
 // Mapa de colores
 $colors: (
     negro:          $color-negro,
@@ -58,7 +66,20 @@ $colors: (
     alt-secundario:  $color-alt-secundario,
     alt-terciario:   $color-alt-terciario,
     alt-quaternario: $color-alt-quaternario
-    );
+);
+
+// Mixin para generar bordes personalizados
+@mixin generate-border($lados, $colors) {
+    @each $lado-name, $direccion in $lados {
+        @each $color-name, $color-value in $colors {
+            .border-#{$color-name}-#{$lado-name} {
+                border-#{$direccion}: 2px solid $color-value; // Borde de 2px sólido
+            }
+        }
+    }
+}
+
+
 
 
 // Mixin para el box-shadow común
@@ -102,10 +123,7 @@ $colors: (
 
 //mixin para generar un backgroun de un color con semi transparencia
 @mixin bg-custom($color) {
-    @include absolute;
-    background: $color; // Color de fondo para pantallas pequeñas y medianas
-    opacity: .4;
-    z-index: 2;
+    background-color: $color !important; // Color de fondo para pantallas pequeñas y medianas
 }
 
 // Este mixin crea el fondo con un color sólido para pantallas pequeñas y un gradiente para pantallas grandes.
@@ -129,8 +147,8 @@ $colors: (
         bottom: -3px; // Línea ubicada justo debajo del texto
         width: $largada;
         height: 5px;
-        background: linear-gradient(to right, $color1, $color2); // Degradado con los colores recibidos
-        z-index: -1;
+        background: linear-gradient(to right, $color1, $color2) !important; // Degradado con los colores recibidos
+        // z-index: 3;
         clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%); // Extremo derecho en diagonal
     }
 }
@@ -157,7 +175,7 @@ $colors: (
 @keyframes noise-1 {
     $steps: 30;
     @for $i from 1 through $steps {
-        #{percentage($i*(1/$steps))} {
+        #{percentage(math.div($i, $steps))} {
             $top: random(100);
             $bottom: random(101 - $top);
             clip-path: inset(#{$top}px 0 #{$bottom}px 0);
@@ -168,7 +186,7 @@ $colors: (
 @keyframes noise-2 {
     $steps: 30;
     @for $i from 0 through $steps {
-        #{percentage($i*(1/$steps))} {
+        #{percentage(math.div($i, $steps))} {
             $top: random(100);
             $bottom: random(101 - $top);
             clip-path: inset(#{$top}px 0 #{$bottom}px 0);
