@@ -238,55 +238,36 @@
 
 	</main>
 
-	<footer id="footer" class="footer dark-background">
-		<div class="container footer-top">
-			<div class="row gy-4 justify-content-center">
-				<div class="col-lg-4 col-md-6 col-12 footer-about">
-					<a href="/" class="logo d-flex align-items-center">
-						<span class="sitename">Rolling Barrel Stuido</span>
-					</a>
-					<!-- <div class="footer-contact pt-3">
-						<p>C/ de Badajoz, 73</p>
-						<p>Sant Martí, 08005 Barcelona</p>
-						<p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-						<p><strong>Email:</strong> <span>info@example.com</span></p>
-					</div> -->
-					<div class="social-links d-flex mt-4">
-						<a href=""><i class="bi bi-twitter-x"></i></a>
-						<a href=""><i class="bi bi-facebook"></i></a>
-						<a href=""><i class="bi bi-instagram"></i></a>
-						<a href=""><i class="bi bi-linkedin"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12 footer-links">
-					<h4>Useful Links</h4>
-					<ul style="column-count: 2;">
-						<li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/game">Game</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/gallery">Gallery</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/team">Team</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/about">About</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="container copyright text-center mt-4">
-			<p>© <span>Copyright</span> <strong class="color-accent">Rolling Barrel Studio</strong></p>
-			<div class="">
-				All Rights Reserved
-			</div>
-		</div>
-	</footer>
+	<!-- Aquí se incluirá el footer mediante JavaScript -->
+    <div id="footer-placeholder"></div>
 
 	<!-- Incluir el header con JavaScript -->
-	<script>
-		// Cargar el header
-		fetch("inc/header.html")
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById("header-placeholder").outerHTML = data;
-			});
-	</script>
+    <script>
+        // Cargar el header
+        fetch("inc/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").outerHTML = data;
+                // Header current active page
+                var currentPage = window.location.pathname;
+                var navLinks = document.querySelectorAll("#navmenu ul li a");
+                navLinks.forEach(function (link) {
+                    if (link.getAttribute("href") === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            });
+        // Cargar footer
+        fetch("inc/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+                // Compute current year for footer
+                document.getElementById("current-year").innerHTML = new Date().getFullYear();
+            });
+    </script>
 
 	<!-- Scroll Top -->
 	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">

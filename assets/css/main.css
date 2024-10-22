@@ -1551,7 +1551,7 @@ button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .bt
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #ff4a17;
+  background-color: #36acf6;
   width: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
