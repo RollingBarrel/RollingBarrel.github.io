@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+	<!-- El head se gestiona aquí directamente -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Rolling Barrel Studio</title>
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<!-- Main CSS File -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<!-- FONTAWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="game-page">
+
+	<!-- Aquí se incluirá el header mediante JavaScript -->
+	<div id="header-placeholder"></div>
+
+	<main class="main">
+
+		<!-- Hero Section -->
+		<section id="hero" class="hero section dark-background">
+			<!-- <div class="bg-gradient-custom-rl-negro"></div> -->
+			<div class="bg-absolute-negro"></div>
+			<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+			<div class="container d-flex flex-column align-items-left">
+				<h1 class="titular" data-aos="fade-up" data-aos-delay="100">Game Details</h1>
+				<p class="mini-titular" data-aos="fade-up" data-aos-delay="200">Unleash the Knowledge</p>
+			</div>
+			<div class="botones-header-home d-flex mt-4">
+				<a class="glightbox btn-watch-video d-flex align-items-center me-3"
+					href="https://youtu.be/dQw4w9WgXcQ?si=t0BobfLaObBlv_9c" target="_blank" rel="nofollow"><i
+						class="bi bi-play-circle"></i><span>Watch Trailer</span></a>
+				<a class="btn btn-big btn-primario-especial-br"
+					href="https://github.com/RollingBarrel/Helheim-Engine/releases/latest" target="_blank"><span
+						class="glitch-effect color-default" data-text="Download Chrysalis">Download Chrysalis</span></a>
+			</div>
+		</section>
+
+		<section id="contenido-engine" class="pb-0">
+			<!-- SINOPSIS PLACEHOLDER -->
+			<div class="container-fluid bg-blanco border-primario-t border-primario-b">
+				<div class="container-big color-negro about py-5">
+					<div class="contenedor-flex-horizontal">
+						<div class="p-3">
+							<img src="assets/img/game/initial_zone_01.jpg"
+								class="img-fluid rounded mb-4 border-secundario-r border-secundario-b" alt="About us">
+						</div>
+						<div class="content px-3 py-5">
+							<h3 class="titulo-badge-l"><span>Synopsis</span></h3>
+							<p>
+								In a distant future, the head of security at a research facility on a remote planet
+								faces an unforeseen threat. The facility has been extracting
+								a mysterious energy from the planet’s core, an ancient entity, aiming to replace
+								depleting energy sources.
+							</p>
+							<p>
+								After a devastating quake, his wife,
+								the head scientist, becomes trapped in the lower levels. As he descends to rescue her,
+								the protagonist battles corrupted security robots and mutated
+								test subjects that have escaped. Upon reaching the core, he discovers his wife has been
+								corrupted by the entity, forcing him to make a final, crucial decision.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Aquí se incluirá el footer mediante JavaScript -->
+	<div id="footer-placeholder"></div>
+
+	<!-- Incluir el header con JavaScript -->
+	<script>
+		// Cargar el header
+		fetch("inc/header.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("header-placeholder").outerHTML = data;
+				// Header current active page
+				var currentPage = window.location.pathname;
+				var navLinks = document.querySelectorAll("#navmenu ul li a");
+				navLinks.forEach(function (link) {
+					if (link.getAttribute("href") === currentPage) {
+						link.classList.add("active");
+					} else {
+						link.classList.remove("active");
+					}
+				});
+			});
+		// Cargar footer
+		fetch("inc/footer.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("footer-placeholder").innerHTML = data;
+				// Compute current year for footer
+				document.getElementById("current-year").innerHTML = new Date().getFullYear();
+			});
+	</script>
+
+	<!-- Scroll Top -->
+	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+		<i class="bi bi-arrow-up-short"></i>
+	</a>
+
+	<!-- Preloader -->
+	<!-- <div id="preloader"></div> -->
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+	<!-- Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
