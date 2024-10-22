@@ -79,11 +79,11 @@
         <section id="galeria" class="container">
             <h1 class="text-center titular">Team</h1>
             <div class="layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <div class="gallery-filters botones-linea-primario pb-5 mb-0">
-                    <a data-filter="*" class="filter-active">All</a>
-                    <a data-filter=".filter-artist">Artists</a>
-                    <a data-filter=".filter-programmer">Programmers</a>
-                </div>
+                <ul class="gallery-filters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-artist">Artists</li>
+                    <li data-filter=".filter-programmer">Programmers</li>
+                </ul>
 
                 <div id="gallery-placeholder">
                     <!-- Items will be dynamically added here -->
@@ -104,6 +104,16 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header-placeholder").outerHTML = data;
+                // Header current active page
+                var currentPage = window.location.pathname;
+                var navLinks = document.querySelectorAll("#navmenu ul li a");
+                navLinks.forEach(function (link) {
+                    if (link.getAttribute("href") === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
             });
         // Cargar footer
         fetch("inc/footer.html")
@@ -143,11 +153,11 @@
         }
 
         function addFilterLogic() {
-            var filterButtons = document.querySelectorAll('.gallery-filters a');
+            var filterButtons = document.querySelectorAll('.gallery-filters li');
             filterButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     // Set active
-                    var activeFilter = document.querySelector('a.filter-active')
+                    var activeFilter = document.querySelector('li.filter-active')
                     if (activeFilter) {
                         activeFilter.classList.remove("filter-active");
                     }
