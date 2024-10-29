@@ -1,14 +1,46 @@
 <!-- Header Section -->
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
         <a href="/" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <img src="assets/img/logo.svg" alt="">
             <span class="sitename">Rolling Barrel Studio</span>
         </a>
 
         <nav id="navmenu" class="navmenu">
+            <div class="d-none d-md-block">
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/game.html">Game</a></li>
+                    <li><a href="/engine.html">Engine</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="menu-mobile d-md-none me-4">
+                <a class="d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </a>
+            </div>
+        </nav>
+
+        <a class="btn btn-small btn-primario-especial-br" href="https://github.com/RollingBarrel/Helheim-Engine/releases/latest" target="_blank"><span class="" data-text="Download Chrysalis">Download Chrysalis</span></a>
+    </div>
+
+    <!-- MENU MOVIL -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+		<div class="offcanvas-header">
+            <div class="empresa">
+                <a href="https://rollingbarrel.github.io/" aria-label="Página principal">
+                    <picture>
+                        <img id="logo-submenu-mobile" src="assets/img/logo.svg" alt="Logo" loading="lazy">
+                    </picture>
+                </a>
+                <span class="sitename">Rolling Barrel Studio</span>
+            </div>
+			<a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+		</div>
+		<div class="offcanvas-body menu-mobile">
             <ul>
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="/game.html">Game</a></li>
@@ -16,10 +48,7 @@
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/team.html">Team</a></li>
             </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <a class="btn btn-small btn-primario-especial-br" href="https://github.com/RollingBarrel/Helheim-Engine/releases/latest" target="_blank"><span class="glitch-effect" data-text="Download Chrysalis">Download Chrysalis</span></a>
-
-    </div>
+		</div>
+	</div>
+	<!-- /MENU MOVIL -->
 </header>

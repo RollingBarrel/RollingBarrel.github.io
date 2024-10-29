@@ -1,4 +1,4 @@
-.bigmacca{
+.goldplay {
     font-family: $special-font;
     letter-spacing: normal;
 }
@@ -178,13 +178,17 @@ header {
 
 
 // CARDS GALERIA TEAM
-
-
-
 .galeria-contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-    gap: 2rem; /* Espacio entre los items */
+    gap: 2rem; 
+    grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+    @media (min-width: $breakpoint-sm) {
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+    @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+        
+    }
 
 }
 
@@ -253,13 +257,19 @@ header {
         h4{
             color: $color-primario !important;
         }
-        .img-team{
-            box-shadow: 0 1px 10px 5px #3bfedf40;
-            img{
+        &.filter-programmer{
+            .img-team{
+                box-shadow: 0 1px 2px 3px darken($color-alt-primario, 20%);
+            }
+        }
+        &.filter-artist{
+            .img-team{
+                box-shadow: 0 1px 2px 3px darken($color-alt-secundario, 10%);
             }
         }
         @media (min-width: $breakpoint-md) {
-            .img-team, .social, h4 {
+            // .img-team, .social, h4 {
+            .img-team, .social {
                 @include glitch-effect-mixin();
                 // Usamos el mixin para aplicar el delay a múltiples elementos
                 @include random-delay(0.2, 1);
@@ -317,5 +327,37 @@ header {
                 color: $color-alt-secundario;
             }
         }
+    }
+}
+
+// MENU MOBILE
+.menu-mobile{
+    i{
+        font-size: 2rem;
+    }
+}
+.offcanvas{
+    .empresa{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        a{
+            max-width: 5rem;
+        }
+        .sitename{
+            color: $color-primario;
+        }
+    }
+    background-color: $color-default;
+    ul{
+        list-style: none;
+        padding: 1rem;
+        li{
+            padding: 1rem 0;
+            border-top: 2px solid $color-primario;
+        }
+    }
+    .btn-close{
+        filter: brightness(1);
     }
 }

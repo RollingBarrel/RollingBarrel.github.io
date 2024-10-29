@@ -2,7 +2,7 @@
 :root {
   --default-font: "Akshar", sans-serif;
   --heading-font: "Akshar", sans-serif;
-  --special-font: "BIGMACCA";
+  --special-font: "goldplay";
   --fuente-size-base: 15px;
   --fuente-muy-peque: .7rem;
   --color-negro: #000000;
@@ -16,7 +16,6 @@
   --color-alt-secundario: #fc0f3e;
   --color-alt-terciario: #fcff23;
   --color-alt-quaternario: #00ff80;
-  --accent-color: #36acf6;
   --border-radius: .0;
   --time: .2s;
   --bs-gutter-x: 1.8rem;
@@ -27,6 +26,230 @@
   src: url("../../fonts/BIGMACCA.eot");
   src: url("../../fonts/BIGMACCA.eot?#iefix") format("embedded-opentype"), url("../../fonts/BIGMACCA.woff2") format("woff2"), url("../../fonts/BIGMACCA.woff") format("woff"), url("../../fonts/BIGMACCA.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-Medium.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-Medium.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-Medium.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt Medium It";
+  src: url("../../fonts/goldplay/GoldplayAlt-MediumIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-MediumIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-MediumIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-MediumIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-MediumIt.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt Light It";
+  src: url("../../fonts/goldplay/GoldplayAlt-LightIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-LightIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-LightIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-LightIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt Black It";
+  src: url("../../fonts/goldplay/GoldplayAlt-BlackIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-BlackIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-BlackIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-BlackIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-Bold.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-Bold.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-Bold.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-Black.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-Black.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-Black.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt Bold It";
+  src: url("../../fonts/goldplay/GoldplayAlt-BoldIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-BoldIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-BoldIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-BoldIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt It";
+  src: url("../../fonts/goldplay/GoldplayAlt-RegularIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-RegularIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-RegularIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-RegularIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-Light.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-Light.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-Light.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Black It";
+  src: url("../../fonts/goldplay/Goldplay-BlackIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-BlackIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-BlackIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-BlackIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-Bold.eot");
+  src: url("../../fonts/goldplay/Goldplay-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-Bold.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-Bold.woff") format("woff"), url("../../fonts/goldplay/Goldplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-SemiBold.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-SemiBold.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-SemiBold.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt Thin It";
+  src: url("../../fonts/goldplay/GoldplayAlt-ThinIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-ThinIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-ThinIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-ThinIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-Thin.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-Thin.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-Thin.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay SemiBold It";
+  src: url("../../fonts/goldplay/Goldplay-SemiBoldIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-SemiBoldIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-SemiBoldIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-SemiBoldIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-SemiBoldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Light It";
+  src: url("../../fonts/goldplay/Goldplay-LightIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-LightIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-LightIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-LightIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Medium It";
+  src: url("../../fonts/goldplay/Goldplay-MediumIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-MediumIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-MediumIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-MediumIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-MediumIt.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-Light.eot");
+  src: url("../../fonts/goldplay/Goldplay-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-Light.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-Light.woff") format("woff"), url("../../fonts/goldplay/Goldplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Bold It";
+  src: url("../../fonts/goldplay/Goldplay-BoldIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-BoldIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-BoldIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-BoldIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-Black.eot");
+  src: url("../../fonts/goldplay/Goldplay-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-Black.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-Black.woff") format("woff"), url("../../fonts/goldplay/Goldplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-Medium.eot");
+  src: url("../../fonts/goldplay/Goldplay-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-Medium.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-Medium.woff") format("woff"), url("../../fonts/goldplay/Goldplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay It";
+  src: url("../../fonts/goldplay/Goldplay-RegularIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-RegularIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-RegularIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-RegularIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-Regular.eot");
+  src: url("../../fonts/goldplay/Goldplay-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-Regular.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-Regular.woff") format("woff"), url("../../fonts/goldplay/Goldplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt";
+  src: url("../../fonts/goldplay/GoldplayAlt-Regular.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-Regular.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-Regular.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Thin It";
+  src: url("../../fonts/goldplay/Goldplay-ThinIt.eot");
+  src: url("../../fonts/goldplay/Goldplay-ThinIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-ThinIt.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-ThinIt.woff") format("woff"), url("../../fonts/goldplay/Goldplay-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay Alt SemiBold It";
+  src: url("../../fonts/goldplay/GoldplayAlt-SemiBoldIt.eot");
+  src: url("../../fonts/goldplay/GoldplayAlt-SemiBoldIt.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/GoldplayAlt-SemiBoldIt.woff2") format("woff2"), url("../../fonts/goldplay/GoldplayAlt-SemiBoldIt.woff") format("woff"), url("../../fonts/goldplay/GoldplayAlt-SemiBoldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-SemiBold.eot");
+  src: url("../../fonts/goldplay/Goldplay-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-SemiBold.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-SemiBold.woff") format("woff"), url("../../fonts/goldplay/Goldplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Goldplay";
+  src: url("../../fonts/goldplay/Goldplay-Thin.eot");
+  src: url("../../fonts/goldplay/Goldplay-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/goldplay/Goldplay-Thin.woff2") format("woff2"), url("../../fonts/goldplay/Goldplay-Thin.woff") format("woff"), url("../../fonts/goldplay/Goldplay-Thin.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -87,7 +310,7 @@ a:hover {
   text-decoration: none !important;
 }
 
-.btn:focus, .btn-yt:focus, .btn-get-started:focus, .btn-verde:focus, .btn-verde-especial-bl:focus, .btn-verde-especial-br:focus, .btn-verde-especial-tl:focus, .btn-verde-especial-tr:focus, .btn-rojo:focus, .btn-rojo-especial-bl:focus, .btn-rojo-especial-br:focus, .btn-rojo-especial-tl:focus, .btn-rojo-especial-tr:focus, .btn-primario-invert:focus, .btn-primario-invert-especial-bl:focus, .btn-primario-invert-especial-br:focus, .btn-primario-invert-especial-tl:focus, .btn-primario-invert-especial-tr:focus, .btn-primario:focus, .btn-primario-especial-bl:focus, .btn-primario-especial-br:focus, .botones-linea-primario a:focus:last-child, .btn-primario-especial-tl:focus, .botones-linea-primario a:focus:first-child, .btn-primario-especial-tr:focus, .btn-small:focus, .btn-big:focus, a:focus {
+.btn:focus, .btn-yt:focus, .btn-get-started:focus, .btn-verde:focus, .btn-verde-especial-bl:focus, .btn-verde-especial-br:focus, .btn-verde-especial-tl:focus, .btn-verde-especial-tr:focus, .btn-rojo:focus, .btn-rojo-especial-bl:focus, .btn-rojo-especial-br:focus, .btn-rojo-especial-tl:focus, .btn-rojo-especial-tr:focus, .btn-primario-invert:focus, .botones-linea-primario a.filter-active:focus, .btn-primario-invert-especial-bl:focus, .btn-primario-invert-especial-br:focus, .btn-primario-invert-especial-tl:focus, .btn-primario-invert-especial-tr:focus, .btn-primario:focus, .botones-linea-primario li:focus, .btn-primario-especial-bl:focus, .btn-primario-especial-br:focus, .botones-linea-primario a:focus:last-child, .btn-primario-especial-tl:focus, .botones-linea-primario a:focus:first-child, .btn-primario-especial-tr:focus, .btn-small:focus, .btn-big:focus, a:focus {
   outline: none;
 }
 
@@ -97,202 +320,213 @@ img {
   transition: all 0.3s;
 }
 
+.sitename {
+  font-family: var(--special-font);
+  font-weight: 600;
+}
+
 @keyframes glitch {
-  1% {
-    transform: rotateX(10deg) skewX(90deg);
+  0%, 100% {
+    transform: translate(0);
   }
-  2% {
-    transform: rotateX(0deg) skewX(0deg);
+  25% {
+    transform: translate(-2px, -1px);
+  }
+  50% {
+    transform: translate(2px, 1px);
+  }
+  75% {
+    transform: translate(-1px, 2px);
   }
 }
 @keyframes noise-1 {
   3.3333333333% {
-    clip-path: inset(53px 0 32px 0);
+    clip-path: inset(72px 0 22px 0);
   }
   6.6666666667% {
-    clip-path: inset(54px 0 11px 0);
+    clip-path: inset(99px 0 1px 0);
   }
   10% {
-    clip-path: inset(35px 0 57px 0);
+    clip-path: inset(55px 0 6px 0);
   }
   13.3333333333% {
-    clip-path: inset(6px 0 70px 0);
+    clip-path: inset(98px 0 3px 0);
   }
   16.6666666667% {
-    clip-path: inset(95px 0 4px 0);
+    clip-path: inset(29px 0 24px 0);
   }
   20% {
-    clip-path: inset(63px 0 36px 0);
+    clip-path: inset(71px 0 3px 0);
   }
   23.3333333333% {
-    clip-path: inset(67px 0 30px 0);
+    clip-path: inset(35px 0 30px 0);
   }
   26.6666666667% {
-    clip-path: inset(73px 0 5px 0);
+    clip-path: inset(96px 0 1px 0);
   }
   30% {
-    clip-path: inset(64px 0 20px 0);
+    clip-path: inset(66px 0 20px 0);
   }
   33.3333333333% {
-    clip-path: inset(40px 0 29px 0);
+    clip-path: inset(74px 0 3px 0);
   }
   36.6666666667% {
-    clip-path: inset(25px 0 57px 0);
+    clip-path: inset(29px 0 8px 0);
   }
   40% {
-    clip-path: inset(15px 0 79px 0);
+    clip-path: inset(37px 0 54px 0);
   }
   43.3333333333% {
-    clip-path: inset(67px 0 32px 0);
+    clip-path: inset(28px 0 54px 0);
   }
   46.6666666667% {
-    clip-path: inset(39px 0 5px 0);
+    clip-path: inset(92px 0 4px 0);
   }
   50% {
-    clip-path: inset(35px 0 1px 0);
+    clip-path: inset(69px 0 18px 0);
   }
   53.3333333333% {
-    clip-path: inset(30px 0 25px 0);
+    clip-path: inset(81px 0 19px 0);
   }
   56.6666666667% {
-    clip-path: inset(11px 0 78px 0);
+    clip-path: inset(61px 0 38px 0);
   }
   60% {
-    clip-path: inset(28px 0 25px 0);
+    clip-path: inset(16px 0 47px 0);
   }
   63.3333333333% {
-    clip-path: inset(85px 0 4px 0);
+    clip-path: inset(9px 0 78px 0);
   }
   66.6666666667% {
-    clip-path: inset(68px 0 1px 0);
+    clip-path: inset(25px 0 65px 0);
   }
   70% {
-    clip-path: inset(69px 0 13px 0);
+    clip-path: inset(44px 0 46px 0);
   }
   73.3333333333% {
-    clip-path: inset(74px 0 12px 0);
+    clip-path: inset(26px 0 40px 0);
   }
   76.6666666667% {
-    clip-path: inset(37px 0 49px 0);
+    clip-path: inset(73px 0 11px 0);
   }
   80% {
-    clip-path: inset(62px 0 34px 0);
+    clip-path: inset(70px 0 20px 0);
   }
   83.3333333333% {
-    clip-path: inset(18px 0 58px 0);
+    clip-path: inset(53px 0 21px 0);
   }
   86.6666666667% {
-    clip-path: inset(23px 0 12px 0);
+    clip-path: inset(42px 0 41px 0);
   }
   90% {
-    clip-path: inset(59px 0 32px 0);
+    clip-path: inset(15px 0 17px 0);
   }
   93.3333333333% {
-    clip-path: inset(37px 0 49px 0);
+    clip-path: inset(45px 0 35px 0);
   }
   96.6666666667% {
-    clip-path: inset(26px 0 10px 0);
+    clip-path: inset(43px 0 21px 0);
   }
   100% {
-    clip-path: inset(39px 0 53px 0);
+    clip-path: inset(66px 0 20px 0);
   }
 }
 @keyframes noise-2 {
   0% {
-    clip-path: inset(8px 0 2px 0);
+    clip-path: inset(13px 0 88px 0);
   }
   3.3333333333% {
-    clip-path: inset(43px 0 57px 0);
+    clip-path: inset(41px 0 39px 0);
   }
   6.6666666667% {
-    clip-path: inset(86px 0 8px 0);
+    clip-path: inset(52px 0 47px 0);
   }
   10% {
-    clip-path: inset(96px 0 5px 0);
+    clip-path: inset(20px 0 14px 0);
   }
   13.3333333333% {
-    clip-path: inset(22px 0 3px 0);
+    clip-path: inset(33px 0 29px 0);
   }
   16.6666666667% {
-    clip-path: inset(16px 0 40px 0);
+    clip-path: inset(82px 0 9px 0);
   }
   20% {
-    clip-path: inset(82px 0 2px 0);
+    clip-path: inset(97px 0 3px 0);
   }
   23.3333333333% {
-    clip-path: inset(65px 0 2px 0);
+    clip-path: inset(21px 0 15px 0);
   }
   26.6666666667% {
-    clip-path: inset(41px 0 7px 0);
+    clip-path: inset(49px 0 14px 0);
   }
   30% {
-    clip-path: inset(11px 0 69px 0);
+    clip-path: inset(78px 0 23px 0);
   }
   33.3333333333% {
-    clip-path: inset(69px 0 17px 0);
+    clip-path: inset(25px 0 23px 0);
   }
   36.6666666667% {
-    clip-path: inset(83px 0 16px 0);
+    clip-path: inset(52px 0 32px 0);
   }
   40% {
-    clip-path: inset(41px 0 36px 0);
+    clip-path: inset(63px 0 21px 0);
   }
   43.3333333333% {
-    clip-path: inset(45px 0 49px 0);
+    clip-path: inset(9px 0 11px 0);
   }
   46.6666666667% {
-    clip-path: inset(53px 0 12px 0);
+    clip-path: inset(3px 0 59px 0);
   }
   50% {
-    clip-path: inset(96px 0 1px 0);
+    clip-path: inset(9px 0 78px 0);
   }
   53.3333333333% {
-    clip-path: inset(55px 0 15px 0);
+    clip-path: inset(28px 0 60px 0);
   }
   56.6666666667% {
-    clip-path: inset(30px 0 27px 0);
+    clip-path: inset(23px 0 12px 0);
   }
   60% {
-    clip-path: inset(72px 0 12px 0);
+    clip-path: inset(54px 0 29px 0);
   }
   63.3333333333% {
-    clip-path: inset(89px 0 7px 0);
+    clip-path: inset(18px 0 36px 0);
   }
   66.6666666667% {
-    clip-path: inset(11px 0 56px 0);
+    clip-path: inset(96px 0 5px 0);
   }
   70% {
-    clip-path: inset(32px 0 29px 0);
+    clip-path: inset(44px 0 36px 0);
   }
   73.3333333333% {
-    clip-path: inset(69px 0 12px 0);
+    clip-path: inset(35px 0 15px 0);
   }
   76.6666666667% {
-    clip-path: inset(11px 0 52px 0);
+    clip-path: inset(58px 0 10px 0);
   }
   80% {
-    clip-path: inset(6px 0 50px 0);
+    clip-path: inset(54px 0 41px 0);
   }
   83.3333333333% {
-    clip-path: inset(14px 0 40px 0);
+    clip-path: inset(13px 0 28px 0);
   }
   86.6666666667% {
-    clip-path: inset(70px 0 14px 0);
+    clip-path: inset(9px 0 91px 0);
   }
   90% {
-    clip-path: inset(48px 0 41px 0);
+    clip-path: inset(37px 0 43px 0);
   }
   93.3333333333% {
-    clip-path: inset(58px 0 38px 0);
+    clip-path: inset(74px 0 24px 0);
   }
   96.6666666667% {
-    clip-path: inset(62px 0 24px 0);
+    clip-path: inset(28px 0 65px 0);
   }
   100% {
-    clip-path: inset(34px 0 34px 0);
+    clip-path: inset(51px 0 42px 0);
   }
 }
-.tl, .more-info .details, .btn-verde-especial-tl, .btn-rojo-especial-tl, .btn-primario-invert-especial-tl, .btn-primario-especial-tl, .botones-linea-primario a:first-child {
+.tl, .more-info .details, .btn-verde-especial-tl, .btn-rojo-especial-tl, .btn-primario-invert-especial-tl, .btn-primario-especial-tl, .botones-linea-primario a:first-child, .botones-linea-primario li:first-child {
   clip-path: polygon(10% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%);
 }
 
@@ -300,7 +534,7 @@ img {
   clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 0 100%, 0% 50%);
 }
 
-.br, .btn-verde-especial-br, .btn-rojo-especial-br, .btn-primario-invert-especial-br, .btn-primario-especial-br, .botones-linea-primario a:last-child {
+.br, .btn-verde-especial-br, .btn-rojo-especial-br, .btn-primario-invert-especial-br, .btn-primario-especial-br, .botones-linea-primario a:last-child, .botones-linea-primario li:last-child {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 50%);
 }
 
@@ -1085,17 +1319,19 @@ img {
   justify-content: right;
 }
 
-.contenedor-flex-horizontal {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.contenedor-flex-vertical {
+.contenedor-flex-vertical, .contenedor-flex-horizontal {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contenedor-flex-horizontal {
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .details {
@@ -1240,7 +1476,7 @@ img {
 .glitch-effect {
   position: relative;
   display: inline-block;
-  animation: glitch 5s infinite;
+  animation: glitch 1s infinite;
 }
 .glitch-effect::before, .glitch-effect::after {
   content: attr(data-text);
@@ -1249,18 +1485,19 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background: transparent;
+  color: inherit;
+  animation: glitch 0.7s infinite;
 }
 .glitch-effect::before {
   left: -2px;
-  color: magenta !important;
-  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s infinite;
+  color: magenta;
+  animation-delay: 0.1s;
 }
 .glitch-effect::after {
   left: 2px;
-  color: #fc0f3e !important;
-  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s infinite;
+  color: #3bfedf;
+  animation-delay: 0.2s;
 }
 
 .character-item {
@@ -1379,7 +1616,7 @@ body.game-page #glightbox-body .gslide-image {
   width: 80vw;
 }
 
-button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .btn-verde-especial-br, .btn-verde-especial-tl, .btn-verde-especial-tr, .btn-rojo, .btn-rojo-especial-bl, .btn-rojo-especial-br, .btn-rojo-especial-tl, .btn-rojo-especial-tr, .btn-primario-invert, .btn-primario-invert-especial-bl, .btn-primario-invert-especial-br, .btn-primario-invert-especial-tl, .btn-primario-invert-especial-tr, .btn-primario, .botones-linea-primario a, .btn-primario-especial-bl, .btn-primario-especial-br, .botones-linea-primario a:last-child, .btn-primario-especial-tl, .botones-linea-primario a:first-child, .btn-primario-especial-tr, .btn-small, .btn-big {
+button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .btn-verde-especial-br, .btn-verde-especial-tl, .btn-verde-especial-tr, .btn-rojo, .btn-rojo-especial-bl, .btn-rojo-especial-br, .btn-rojo-especial-tl, .btn-rojo-especial-tr, .btn-primario-invert, .botones-linea-primario a.filter-active, .botones-linea-primario li.filter-active, .btn-primario-invert-especial-bl, .btn-primario-invert-especial-br, .btn-primario-invert-especial-tl, .btn-primario-invert-especial-tr, .btn-primario, .botones-linea-primario a, .botones-linea-primario li, .btn-primario-especial-bl, .btn-primario-especial-br, .botones-linea-primario a:last-child, .botones-linea-primario li:last-child, .btn-primario-especial-tl, .botones-linea-primario a:first-child, .botones-linea-primario li:first-child, .btn-primario-especial-tr, .btn-small, .btn-big {
   font-family: var(--default-font);
   font-size: 1rem;
   font-weight: 800;
@@ -1401,22 +1638,22 @@ button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .bt
   padding: 0.4rem 1rem;
 }
 
-.btn-primario, .botones-linea-primario a, .btn-primario-especial-bl, .btn-primario-especial-br, .botones-linea-primario a:last-child, .btn-primario-especial-tl, .botones-linea-primario a:first-child, .btn-primario-especial-tr {
+.btn-primario, .botones-linea-primario a, .botones-linea-primario li, .btn-primario-especial-bl, .btn-primario-especial-br, .botones-linea-primario a:last-child, .botones-linea-primario li:last-child, .btn-primario-especial-tl, .botones-linea-primario a:first-child, .botones-linea-primario li:first-child, .btn-primario-especial-tr {
   background-color: #3bfedf;
   color: #223644;
   transition: all 0.3s !important;
 }
-.btn-primario:hover, .botones-linea-primario a:hover, .btn-primario-especial-bl:hover, .btn-primario-especial-br:hover, .btn-primario-especial-tl:hover, .btn-primario-especial-tr:hover, .btn-primario:active, .botones-linea-primario a:active, .btn-primario-especial-bl:active, .btn-primario-especial-br:active, .btn-primario-especial-tl:active, .btn-primario-especial-tr:active, .btn-primario.active, .botones-linea-primario a.active, .active.btn-primario-especial-bl, .active.btn-primario-especial-br, .active.btn-primario-especial-tl, .active.btn-primario-especial-tr {
+.btn-primario:hover, .botones-linea-primario a:hover, .botones-linea-primario li:hover, .btn-primario-especial-bl:hover, .btn-primario-especial-br:hover, .btn-primario-especial-tl:hover, .btn-primario-especial-tr:hover, .btn-primario:active, .botones-linea-primario a:active, .botones-linea-primario li:active, .btn-primario-especial-bl:active, .btn-primario-especial-br:active, .btn-primario-especial-tl:active, .btn-primario-especial-tr:active, .btn-primario.active, .botones-linea-primario a.active, .botones-linea-primario li.active, .active.btn-primario-especial-bl, .active.btn-primario-especial-br, .active.btn-primario-especial-tl, .active.btn-primario-especial-tr {
   background-color: #4d5e72;
   color: #FFFFFF;
 }
 
-.btn-primario-invert, .btn-primario-invert-especial-bl, .btn-primario-invert-especial-br, .btn-primario-invert-especial-tl, .btn-primario-invert-especial-tr {
+.btn-primario-invert, .botones-linea-primario a.filter-active, .botones-linea-primario li.filter-active, .btn-primario-invert-especial-bl, .btn-primario-invert-especial-br, .btn-primario-invert-especial-tl, .btn-primario-invert-especial-tr {
   background-color: #4d5e72;
   color: #FFFFFF;
   transition: all 0.3s !important;
 }
-.btn-primario-invert:hover, .btn-primario-invert-especial-bl:hover, .btn-primario-invert-especial-br:hover, .btn-primario-invert-especial-tl:hover, .btn-primario-invert-especial-tr:hover, .btn-primario-invert:active, .btn-primario-invert-especial-bl:active, .btn-primario-invert-especial-br:active, .btn-primario-invert-especial-tl:active, .btn-primario-invert-especial-tr:active, .btn-primario-invert.active, .active.btn-primario-invert-especial-bl, .active.btn-primario-invert-especial-br, .active.btn-primario-invert-especial-tl, .active.btn-primario-invert-especial-tr {
+.btn-primario-invert:hover, .botones-linea-primario a.filter-active:hover, .botones-linea-primario li.filter-active:hover, .btn-primario-invert-especial-bl:hover, .btn-primario-invert-especial-br:hover, .btn-primario-invert-especial-tl:hover, .btn-primario-invert-especial-tr:hover, .btn-primario-invert:active, .botones-linea-primario a.filter-active:active, .botones-linea-primario li.filter-active:active, .btn-primario-invert-especial-bl:active, .btn-primario-invert-especial-br:active, .btn-primario-invert-especial-tl:active, .btn-primario-invert-especial-tr:active, .btn-primario-invert.active, .botones-linea-primario a.active.filter-active, .botones-linea-primario li.active.filter-active, .active.btn-primario-invert-especial-bl, .active.btn-primario-invert-especial-br, .active.btn-primario-invert-especial-tl, .active.btn-primario-invert-especial-tr {
   background-color: #3bfedf;
   color: #223644;
 }
@@ -1467,15 +1704,26 @@ button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .bt
 }
 
 .botones-linea-primario {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.botones-linea-primario a {
   display: inline-block;
-  padding: 1rem !important;
+  padding: 1rem;
+  text-align-last: center;
 }
+.botones-linea-primario a, .botones-linea-primario li {
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  .botones-linea-primario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .botones-linea-primario a {
+    display: inline-block;
+    padding: 1rem !important;
+  }
+}
+
 .light-background {
   background-color: #f1f4fa;
 }
@@ -1551,7 +1799,7 @@ button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .bt
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #36acf6;
+  background-color: #3bfedf;
   width: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
@@ -1568,7 +1816,7 @@ button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .bt
 }
 .footer .footer-about .logo span {
   font-size: 26px;
-  font-family: "BIGMACCA";
+  font-family: "goldplay";
   color: #FFFFFF;
 }
 .footer .footer-about p {
@@ -1837,7 +2085,7 @@ section, .section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent-color);
+  background: var(--color-primario);
   margin: 4px 10px;
 }
 .section-title p {
@@ -2187,43 +2435,10 @@ section, .section {
 # Gallery Section
 --------------------------------------------------------------*/
 .gallery-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.gallery-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 10px;
-  line-height: 1;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.gallery-filters li:hover,
-.gallery-filters li.filter-active {
-  color: var(--accent-color);
-}
-
-.gallery-filters li:first-child {
-  margin-left: 0;
-}
-
-.gallery-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .gallery-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
 .gallery-content {
   position: relative;
   overflow: hidden;
@@ -2603,8 +2818,8 @@ section, .section {
   /* Add your styles here */
 }
 
-.bigmacca {
-  font-family: "BIGMACCA";
+.goldplay {
+  font-family: "goldplay";
   letter-spacing: normal;
 }
 
@@ -2752,7 +2967,7 @@ header .sitename {
   color: #00ff80;
   position: relative;
   display: inline-block;
-  animation: glitch 5s infinite;
+  animation: glitch 1s infinite;
 }
 .more-info:hover .details h3::before, .more-info:hover .details h3::after {
   content: attr(data-text);
@@ -2761,23 +2976,34 @@ header .sitename {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background: transparent;
+  color: inherit;
+  animation: glitch 0.7s infinite;
 }
 .more-info:hover .details h3::before {
   left: -2px;
-  color: magenta !important;
-  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s infinite;
+  color: magenta;
+  animation-delay: 0.1s;
 }
 .more-info:hover .details h3::after {
   left: 2px;
-  color: #fc0f3e !important;
-  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s infinite;
+  color: red;
+  animation-delay: 0.2s;
 }
 .galeria-contenedor {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  gap: 2rem; /* Espacio entre los items */
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+}
+@media (min-width: 576px) {
+  .galeria-contenedor {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .galeria-contenedor {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 .galeria-item {
@@ -2846,35 +3072,39 @@ header .sitename {
 .galeria-item:hover h4 {
   color: #3bfedf !important;
 }
-.galeria-item:hover .img-team {
-  box-shadow: 0 1px 10px 5px rgba(59, 254, 223, 0.2509803922);
+.galeria-item:hover.filter-programmer .img-team {
+  box-shadow: 0 1px 2px 3px #0878be;
+}
+.galeria-item:hover.filter-artist .img-team {
+  box-shadow: 0 1px 2px 3px #d5032c;
 }
 @media (min-width: 768px) {
-  .galeria-item:hover .img-team, .galeria-item:hover .social, .galeria-item:hover h4 {
+  .galeria-item:hover .img-team, .galeria-item:hover .social {
     position: relative;
     display: inline-block;
-    animation: glitch 5s infinite;
-    animation-delay: 0.582s;
+    animation: glitch 1s infinite;
+    animation-delay: 0.312s;
   }
-  .galeria-item:hover .img-team::before, .galeria-item:hover .img-team::after, .galeria-item:hover .social::before, .galeria-item:hover .social::after, .galeria-item:hover h4::before, .galeria-item:hover h4::after {
+  .galeria-item:hover .img-team::before, .galeria-item:hover .img-team::after, .galeria-item:hover .social::before, .galeria-item:hover .social::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background: transparent;
+    color: inherit;
+    animation: glitch 0.7s infinite;
   }
-  .galeria-item:hover .img-team::before, .galeria-item:hover .social::before, .galeria-item:hover h4::before {
+  .galeria-item:hover .img-team::before, .galeria-item:hover .social::before {
     left: -2px;
-    color: magenta !important;
-    animation: noise-1 3s linear infinite alternate-reverse, glitch 5s infinite;
+    color: magenta;
+    animation-delay: 0.1s;
   }
-  .galeria-item:hover .img-team::after, .galeria-item:hover .social::after, .galeria-item:hover h4::after {
+  .galeria-item:hover .img-team::after, .galeria-item:hover .social::after {
     left: 2px;
-    color: #fc0f3e !important;
-    animation: noise-2 3s linear infinite alternate-reverse, glitch 5s infinite;
+    color: red;
+    animation-delay: 0.2s;
   }
 }
 
@@ -2926,6 +3156,36 @@ header .sitename {
 }
 #characters-tab-pane ul li i {
   color: #fc0f3e;
+}
+
+.menu-mobile i {
+  font-size: 2rem;
+}
+
+.offcanvas {
+  background-color: #223644;
+}
+.offcanvas .empresa {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.offcanvas .empresa a {
+  max-width: 5rem;
+}
+.offcanvas .empresa .sitename {
+  color: #3bfedf;
+}
+.offcanvas ul {
+  list-style: none;
+  padding: 1rem;
+}
+.offcanvas ul li {
+  padding: 1rem 0;
+  border-top: 2px solid #3bfedf;
+}
+.offcanvas .btn-close {
+  filter: brightness(1);
 }
 
 /*# sourceMappingURL=main.css.map */

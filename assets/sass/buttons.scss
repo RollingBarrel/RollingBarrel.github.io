@@ -143,19 +143,30 @@ button, .btn{
 
 
 .botones-linea-primario {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    a {
+    display: inline-block;
+    padding: 1rem;
+    text-align-last: center;
+    a, li{
         @extend .btn-primario;
-        display: inline-block;
-        padding: 1rem !important;
+        margin-bottom: 1rem;
         &:first-child{
             @extend .btn-primario-especial-tl;
         }
         &:last-child{
             @extend .btn-primario-especial-br;
+        }
+        &.filter-active{
+            @extend .btn-primario-invert;
+        }
+    }
+    @media (min-width: $breakpoint-sm) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: inline-block;
+            padding: 1rem !important;
         }
     }
 }

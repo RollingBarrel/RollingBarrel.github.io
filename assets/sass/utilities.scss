@@ -131,19 +131,22 @@
     
 }
 
-.contenedor-flex-horizontal{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .contenedor-flex-vertical{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
+.contenedor-flex-horizontal{
+    @extend .contenedor-flex-vertical;
+    @media (min-width: $breakpoint-md){
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
 
 
 //CARDS
@@ -266,7 +269,7 @@
 
 // EFECTO GLITCH ------------------------------------------
 .glitch-effect {
-    @include glitch-effect-mixin(magenta, $color-alt-secundario);
+    @include glitch-effect-mixin(magenta, $color-primario);
 }
 
 
