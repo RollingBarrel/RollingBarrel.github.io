@@ -1,36 +1,36 @@
 [
     {
         "Name": "Robin Aitken",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "3D Artist",
+        "Linkedin": "https://www.linkedin.com/in/robin-aitken-aa20949a/",
         "GitHub": "",
-        "ArtStation": "",
+        "ArtStation": "https://www.artstation.com/robinaitken7",
         "Website": "",
         "Other": "",
         "Filter": "artist",
-        "Photo": ""
+        "Photo": "Robin_Aitken.jpg"
     },
     {
         "Name": "Jordi Joan Alonso Llovet",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
+        "Roles": "Engine / Gameplay Programmer",
+        "Linkedin": "https://www.linkedin.com/in/jordi-alonso-llovet-99bb01b5/",
+        "GitHub": "https://github.com/JordiAlonsoLlovet",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://jordialonsollovet.github.io",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Jordi-Alonso.jpg"
     },
     {
-        "Name": "Jordi Bach i Balcells",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
+        "Name": "Jordi Bach Balcells",
+        "Roles": "Engine/Graphics Programmer",
+        "Linkedin": "https://www.linkedin.com/in/jordi-bach-822510214/",
+        "GitHub": "https://github.com/bottzo",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://bottzo.github.io",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Balcells-Bach-Jordi.jpg"
     },
     {
         "Name": "David Bardina Tortosa",
@@ -56,99 +56,99 @@
     },
     {
         "Name": "Natalia Cabrera",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "3D Artist and VFX",
+        "Linkedin": "https://www.linkedin.com/in/natalia-cabrera/",
         "GitHub": "",
-        "ArtStation": "",
-        "Website": "",
-        "Other": "",
+        "ArtStation": "https://www.artstation.com/natalia_cabrera",
+        "Website": "https://www.nataliacabrera.com",
+        "Other": "www.hyphavr.com",
         "Filter": "artist",
-        "Photo": ""
+        "Photo": "Cabrera-Natalia.jpg"
     },
     {
         "Name": "Phillip Cherukara",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "3d Artist and VFX",
+        "Linkedin": "https://www.linkedin.com/in/philip-c-philip/",
         "GitHub": "",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://philipcp.carrd.co/",
         "Other": "",
         "Filter": "artist",
         "Photo": ""
     },
     {
         "Name": "Jaime Coronado",
-        "Roles": "",
+        "Roles": "Lead Audio / Engine Programmer / Gameplay Programmer",
         "Linkedin": "https://www.linkedin.com/in/jaime-andres-coronado-arteta-23700728a/",
         "GitHub": "https://github.com/Jaico1",
         "ArtStation": "",
-        "Website": "jaico1.github.io",
+        "Website": "https://jaico1.github.io",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Coronado-Arteta-Jaime.jpg"
     },
     {
         "Name": "Ariadna Cort\u00e9s i Puig",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "Gameplay Programer",
+        "Linkedin": "www.linkedin.com/in/ariadna-cortes-puig\n\n",
         "GitHub": "",
         "ArtStation": "",
         "Website": "",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Cortes-Puig-Ariadna.jpg"
     },
     {
         "Name": "Roc Feijoo Massot",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "Generalist Artist",
+        "Linkedin": "https://www.linkedin.com/in/roc-feijoo-massot/",
         "GitHub": "",
-        "ArtStation": "",
-        "Website": "",
-        "Other": "",
+        "ArtStation": "https://www.artstation.com/roc_feijoo",
+        "Website": "https://roc-feijoo.itch.io/",
+        "Other": "https://www.youtube.com/@lazzerspeed",
         "Filter": "artist",
-        "Photo": ""
+        "Photo": "Feijoo-Massot-Roc.jpg"
     },
     {
         "Name": "Marc Gabernet Rodr\u00edguez",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
+        "Roles": "Engine Programmer / Gameplay Programmer / Level Desginer",
+        "Linkedin": "https://www.linkedin.com/in/marc-gabernet-rodr\u00edguez-56213b24a/",
+        "GitHub": "https://github.com/MarcGabernet",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://marcgabernet.github.io",
         "Other": "",
         "Filter": "programmer",
         "Photo": "Gabernet-Rodriguez-Marc.jpg"
     },
     {
         "Name": "Oriol Gallego Vazquez",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
+        "Roles": "Engine Programmer",
+        "Linkedin": "https://www.linkedin.com/in/oriol-gallego-vazquez-778266227/",
+        "GitHub": "https://github.com/OriolGallego2001",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://oriolgallego2001.github.io/oriolgallego.github.io/",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Gallego-Vazquez-Oriol.jpg"
     },
     {
         "Name": "Moises Garcia Jimenez",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
+        "Roles": "Gameplay Programmer / Level Designer",
+        "Linkedin": "https://www.linkedin.com/in/mois%C3%A9s-garcia-jimenez-797586147/",
+        "GitHub": "https://github.com/MoisesGarcia1",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://mgarcjim.wixsite.com/portfolio/",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Garcia-Jimenez-Moises.jpg"
     },
     {
         "Name": "Carlos Garc\u00eda Segura",
-        "Roles": "Lead Programmer /  Engine Programmer / Graphics Programmer / Gameplay Programmer",
+        "Roles": "Lead Programmer / Engine Programmer / Graphics Programmer / Gameplay Programmer",
         "Linkedin": "https://www.linkedin.com/in/carlosgs1999/",
         "GitHub": "https://github.com/carlosgspsp",
         "ArtStation": "",
-        "Website": "carlosgspsp.github.io/",
+        "Website": "https://carlosgspsp.github.io",
         "Other": "",
         "Filter": "programmer",
         "Photo": "Garc\u00eda-Segura-Carlos.jpg"
@@ -177,25 +177,25 @@
     },
     {
         "Name": "David Longar\u00f3n Lorente",
-        "Roles": "",
+        "Roles": "Lead Designer / Gameplay Programmer / Engine Programmer",
         "Linkedin": "https://www.linkedin.com/in/davidlongaron/",
         "GitHub": "https://github.com/DavidLongaron",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://davidlportfolio.carrd.co/",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Longaron-Lorente-David.jpg"
     },
     {
         "Name": "Kristina Lyudmilova Stoyanova",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "UX/UI Designer & Artist / 3D Artist",
+        "Linkedin": "https://www.linkedin.com/in/kristina-stoyanova-898363a7/",
         "GitHub": "",
-        "ArtStation": "",
+        "ArtStation": "https://www.artstation.com/kristina_sto",
         "Website": "",
         "Other": "",
         "Filter": "artist",
-        "Photo": ""
+        "Photo": "Lyudmilova Stoyanova Kristina.jpg"
     },
     {
         "Name": "Joan March Martos",
@@ -210,14 +210,14 @@
     },
     {
         "Name": "Giovanni Matera",
-        "Roles": "",
+        "Roles": "Gameplay Programmer / Cinematic Artist",
         "Linkedin": "",
-        "GitHub": "",
+        "GitHub": "https://github.com/Matherthebec/",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://www.mtwitalia.it/GiovanniMatera.html",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Giovanni-Matera.jpg"
     },
     {
         "Name": "Oscar Mellado Arbelo",
@@ -232,14 +232,14 @@
     },
     {
         "Name": "Adri\u00e1n Mirabel Mart\u00ednez",
-        "Roles": "",
+        "Roles": "Lead Programmer / Engine & Gameplay Programmer",
         "Linkedin": "https://www.linkedin.com/in/a-mirabel/",
         "GitHub": "https://github.com/M1R4B3L",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://m1r4b3l.github.io/",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Mirabel-Adrian.jpg"
     },
     {
         "Name": "Jordi Nieto Maldonado",
@@ -247,15 +247,15 @@
         "Linkedin": "https://www.linkedin.com/in/jordi-nieto-maldonado-b84327144/",
         "GitHub": "https://github.com/Bermellet",
         "ArtStation": "",
-        "Website": "",
+        "Website": "https://bermellet.github.io",
         "Other": "",
         "Filter": "programmer",
         "Photo": "Nieto-Maldonado-Jordi.jpg"
     },
     {
         "Name": "Carlos N\u00fa\u00f1ez Galindo",
-        "Roles": "Lead Designer / Character Artist",
-        "Linkedin": "www.linkedin.com/in/carlosnu\u00f1ezgalindo",
+        "Roles": "Lead Designer / Character Artist / Character Rigging & Animation",
+        "Linkedin": "https://www.linkedin.com/in/carlosnunezgalindo/",
         "GitHub": "",
         "ArtStation": "https://www.artstation.com/karlosuno",
         "Website": "",
@@ -265,18 +265,18 @@
     },
     {
         "Name": "Oscar Pellic\u00e9 Mas",
-        "Roles": "",
+        "Roles": "Producer / Gameplay Programmer / Engine Programmer",
         "Linkedin": "https://www.linkedin.com/in/oscar-pellice-mas/",
-        "GitHub": "",
+        "GitHub": "https://github.com/Oscar-Pellice-Mas",
         "ArtStation": "",
         "Website": "",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "oscar-pellice.jpg"
     },
     {
         "Name": "Laia Ruiz Royo",
-        "Roles": "",
+        "Roles": "Lead Artist / Enviroment and Lighting Artist",
         "Linkedin": "https://www.linkedin.com/in/laia-ruiz-royo-291632278/?locale=en_US",
         "GitHub": "",
         "ArtStation": "https://www.artstation.com/laiaruizroyo",
@@ -287,24 +287,24 @@
     },
     {
         "Name": "Alex Alonso Torrell Corrales",
-        "Roles": "",
-        "Linkedin": "",
+        "Roles": "Prop Artist / Level Design",
+        "Linkedin": "https://www.linkedin.com/in/alex-torrell-corrales-6631a4334",
         "GitHub": "",
-        "ArtStation": "",
+        "ArtStation": "https://www.artstation.com/adece91",
         "Website": "",
         "Other": "",
         "Filter": "artist",
-        "Photo": ""
+        "Photo": "Torrell_Alex.jpg"
     },
     {
         "Name": "Josep Adri\u00e0 Vilaplana Miret",
-        "Roles": "",
+        "Roles": "Gameplay Programmer / Engine Programmer",
         "Linkedin": "https://www.linkedin.com/in/josepvilaplana/",
         "GitHub": "https://github.com/JosepVilaMir",
         "ArtStation": "",
         "Website": "",
         "Other": "",
         "Filter": "programmer",
-        "Photo": ""
+        "Photo": "Josep-Vilaplana-Miret.jpg"
     }
 ]
