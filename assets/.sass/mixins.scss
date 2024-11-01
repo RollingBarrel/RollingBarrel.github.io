@@ -224,35 +224,3 @@ $colors: (
         animation-delay: 0.2s;
     }
 }
-
-
-//EFECTO LATIDO
-// Mixin para cambiar de color de un icono
-@mixin color-change($color1, $color2, $duration) {
-
-    // Crear un identificador único basado en un hash aleatorio
-    $animation-name: colorChange-#{unique-id()}; // Genera un nombre de animación único
-
-    // Definir los keyframes para la animación
-    @keyframes #{$animation-name} {
-        0% {
-            color: $color1;
-        }
-        50% {
-            color: $color2;
-        }
-        100% {
-            color: $color1;
-        }
-    }
-
-    // Aplicar la animación a los elementos 
-    animation: #{$animation-name} $duration infinite alternate;
-    
-}
-
-// Función para generar un identificador único
-@function unique-id() {
-    $random-id: random(1000000); // Crea un número aleatorio para el ID
-    @return $random-id;
-}

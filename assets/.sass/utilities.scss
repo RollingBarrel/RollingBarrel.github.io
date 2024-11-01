@@ -1,0 +1,412 @@
+//Clases que se usan en los mixins para hacer las esquinas de los botones
+.tl{
+    clip-path: polygon(10% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 30%);
+}
+.tr{
+    clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 0 100%, 0% 50%);
+}
+.br{
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 50%);
+}
+.bl{
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 10% 100%, 0% 70%);
+}
+
+//Delays custom
+.delay-custom{
+    @include delay();
+}
+
+.img-como-bgd {
+	position: relative;
+	img.attachment-full,
+	img.image {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.container {
+		position: relative;
+	}
+}
+/*--------------------------------------------------------------
+# Containers
+--------------------------------------------------------------*/
+[class^=container] {
+    position: relative;
+    padding-right: var(--bs-gutter-x, 0.9rem);
+    padding-left: var(--bs-gutter-x, 0.9rem);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.container-big {
+    max-width: 1700px;
+}
+
+.container-mega {
+    max-width: 1880px;
+}
+
+.container-peque {
+    max-width: calc(576px + 5vw);
+}
+
+//COLORES
+
+@each $color-name, $color-value in $colors {
+    // Se crea una clase con el color
+    .color-#{$color-name} {
+        @include colores($color-value);
+    }
+}
+
+.color-accent{
+    color: #ff4a17 !important;
+}
+
+
+
+
+//BACKGROUNDS
+
+// Generar cada BG con degradado con los colores definidos en el mixin
+@each $direction-name, $deg in $directions {
+    // Para cada color en el mapa $colors:
+    @each $color-name, $color-value in $colors {
+        // Se crea una clase combinando la dirección y el color
+        .bg-gradient-custom-#{$direction-name}-#{$color-name} {
+            // Se incluye el mixin con los valores de ángulo y color obtenidos de los mapas
+            @include bg-gradient-custom($deg, $color-value);
+        }
+    }
+}
+@each $color-name, $color-value in $colors {
+    // Se crea una clase con el color
+    .bg-absolute-#{$color-name} {
+        @include bg-custom($color-value);
+        @include absolute;
+        opacity: .4;
+        z-index: 2;
+    }
+}
+
+@each $color-name, $color-value in $colors {
+    // Se crea una clase con el color
+    .bg-#{$color-name} {
+        @include bg-custom($color-value);
+    }
+}
+
+// BORDERS
+
+// Incluir el mixin para generar las clases
+@include generate-border($lados, $colors);
+
+
+//TITULARES MODO BANDANAs
+
+.titulo-badge{
+    display: flex;
+    justify-content: center;
+    color: $color-default;
+    span{
+        background: $color-primario;
+        padding: .5rem 3rem;
+        position: relative;
+    }
+}
+.titulo-badge-l{
+    @extend .titulo-badge;
+    justify-content: left;
+    
+}
+.titulo-badge-r{
+    @extend .titulo-badge;
+    justify-content: right;
+    
+}
+
+.contenedor-flex-vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenedor-flex-horizontal{
+    @extend .contenedor-flex-vertical;
+    @media (min-width: $breakpoint-md){
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+//CARDS
+//cards que hay en la pagina home
+.details {
+    position: relative;
+    text-align: center;
+    background: color-mix(in srgb, var(--color-default), transparent 5%);
+    padding: 3rem 1.5rem;
+    margin: -6rem 1rem 0px 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+    @include transition();
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $color-primario;
+        @include transition();
+    }
+    p {
+        color: $color-blanco;
+        margin-bottom: 0;
+    }
+}
+
+//TEAM
+//elementos de la  pag team
+
+.member{
+    img{
+        image-rendering: pixelated;
+    }
+}
+
+
+//UNDERLINES SCI FI -----------------------------------------
+
+.underline-azul-verde {
+    @include underline-gradient($color-primario, $color-alt-quaternario); // Usar los colores que prefieras
+}
+.underline-azul-rojo {
+    @include underline-gradient($color-primario, $color-alt-secundario); // Usar los colores que prefieras
+}
+
+.underline-default-verde {
+    @include underline-gradient($color-secundario, $color-alt-quaternario); // Usar los colores que prefieras
+}
+.underline-default-rojo {
+    @include underline-gradient($color-secundario, $color-alt-secundario); // Usar los colores que prefieras
+}
+
+
+//UNDERLINE PARPADEANTE
+// Subrayado con glitch mejorado y pausas entre repeticiones
+.underline-glitch-opacity {
+    position: relative;
+    display: inline-block;
+    color: var(--color-primario); // Color del texto
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px; // Línea ubicada justo debajo del texto
+        width: 100%;
+        height: 5px;
+        background-color: var(--color-secundario); // Color de la línea
+        z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%); // Extremo derecho en diagonal
+        animation: glitch-opacity-improved 6s infinite ease-in-out; // Ciclo completo de 6 segundos
+    }
+}
+
+// Animación mejorada de glitch en opacidad
+@keyframes glitch-opacity-improved {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    30% {
+        opacity: 0.4;
+    }
+    40% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1; // Mantener el estado final sin glitch hasta el siguiente ciclo
+    }
+}
+
+// Adaptar a Mobile
+@media (max-width: 768px) {
+    .underline-glitch-opacity {
+        &::after {
+        bottom: -2px; // Ajustar la posición de la línea en móviles
+        height: 1.5px; // Línea más delgada en móviles
+        }
+    }
+}
+
+
+
+// EFECTO GLITCH ------------------------------------------
+.glitch-effect {
+    @include glitch-effect-mixin(magenta, $color-primario);
+}
+
+
+
+//CARDS CHARACTERS PAGE GAME
+.character-item{
+	display: grid;
+	grid-template-rows: 1fr;
+	margin-bottom: 2rem;
+	border-radius: 5px 5px 0 0;
+	// box-shadow: 0px 5px 20px 10px $color-primario;
+	background-color: $color-default;
+    @extend .border-primario-b;
+    &.enemy{
+        @extend .border-alt-secundario-b;
+        img{
+            @extend .border-alt-secundario-r;
+        }
+        .character-contenedor{
+            .character-contenido{
+                h3{
+                    color: $color-alt-secundario
+                }
+                @media (min-width: $breakpoint-md){
+                    border-right: 2px solid $color-alt-secundario;
+                }
+            }
+        }
+    }
+
+	@media (min-width: $breakpoint-md){
+		grid-template-columns: 1fr, 70%;
+		grid-template-rows: auto;
+		// grid-template-rows: none;
+		// box-shadow: 0px 10px 20px $color-primario;
+	}
+    .character-imagen{
+        height: 20rem;
+        img{
+            @extend .border-primario-r;
+        }
+        @media (min-width: $breakpoint-md){
+            height: 30rem;
+        }
+    }
+    .character-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+        }
+        .character-contenido{
+            display: flex;
+            flex-direction: column;
+            border-right: none;
+            width: auto;
+            @media (min-width: $breakpoint-md){
+                border-right: 2px solid $color-primario;
+                border-bottom: none;
+                justify-content: space-between;
+                width: 80%;
+            }
+            .titulares{
+                .detalles{
+                    span{
+                        font-size: small;
+                    }
+				}
+				span:not(:last-child){
+                    margin-right: 1rem;
+				}
+			}
+		}
+	}
+
+	.character-features{
+		align-content: center;
+		justify-self: center;
+		bdi{
+			font-size: 3rem;
+			font-weight: bold;
+			color: $color-primario;
+		}
+	}
+}
+
+.carousel-control-next, .carousel-control-prev{
+    color: $color-primario !important;
+}
+
+#features-tab-pane .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media (min-width: $breakpoint-md){
+        flex-direction: row;
+    }
+    .character-item{
+        @extend .border-alt-quaternario-b;
+        .character-contenedor{
+            .character-contenido{
+                h3{
+                    color: $color-alt-quaternario
+                }
+                @media (min-width: $breakpoint-md){
+                    border-right: 2px solid $color-alt-quaternario;
+                }
+            }
+        }
+        .character-imagen img{
+            @extend .border-alt-quaternario-r;
+        }
+    }
+}
+
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); /* Crea columnas flexibles */
+    gap: 2rem; /* Espaciado entre las imágenes */
+    img {
+        width: 100%;
+        height: auto;
+        display: block; /* Asegura que las imágenes se comporten como bloques */
+        object-fit: cover; /* Ajusta la imagen si el tamaño es variable */
+    }
+    .item-galeria{
+        a{
+            @include absolute();
+        }
+    }
+}
+body.game-page{
+    #glightbox-body{
+        .gslide-image {
+            width: 80vw;
+        }
+    }
+}

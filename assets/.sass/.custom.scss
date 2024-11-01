@@ -194,14 +194,12 @@ header {
 
 .galeria-item {
     background-color: $color-secundario;
-    position: relative;
+    padding: 10px;
     border-radius: 2px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all .5s;
-    clip-path: polygon(100% 0, 100% 95%, 90% 100%, 0 100%, 0 0);
     .img-team {
         position: relative;
         width: 100%;
@@ -215,52 +213,18 @@ header {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            padding: 0.5rem;
         }
     }
-    &:hover {
-        background-color: lighten($color-default, 20%);
-        // box-shadow: 0px 2px 20px -5px $color-gris;
-        &.filter-programmer{
-            // box-shadow: 0 1px 2px 20px darken($color-alt-primario, 20%);
-            h4{
-                color: #54def5 !important;
-            }
-            i{
-                @include color-change(#54def5, $color-gris, 2s);
-            }
-        }
-        &.filter-artist{
-            // box-shadow: 0 1px 2px 20px darken($color-alt-secundario, 10%);
-            h4{
-                color: #ffabab !important;
-            }
-            i{
-                @include color-change(#ffabab, $color-gris, 2s);
-            }
-        }
-        .badge-artist {
-            transform: translate(0);
-            background-color: #ffabab;
-        }
-        .badge-programmer {
-            transform: translate(0);
-            background-color: #54def5;
-        }
-    }
+    
     .miembro-info {
-        // border-top: 3px solid $color-gris-oscuro;
         width: 100%;
-        padding: 0.5rem 1rem;
-        margin-top: 0;
+        padding: .5rem;
+        margin-top: .5rem;
         h4 {
-            @include transition(.5s);
             color: $color-blanco;
+            @include transition(.5s);
             margin-bottom: 5px;
             font-family: $default-font;
-            @media(min-width: $breakpoint-md){
-                font-size: calc(1rem + .5vw);
-            }
         }
         .miembro-detalles{
             display: flex;
@@ -273,38 +237,50 @@ header {
             color: $color-blanco;
         }
         .social{
-            padding-top: 1rem;
             float: inline-end;
-            align-self: flex-start !important;
+            align-self: flex-end !important;
             a{
                 color: $color-gris;
-                margin-right: .5rem;
+                &:hover{
+                    color: $color-primario !important;
+                }
             }
             i{
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
         }
     }
-    [class^="badge-"]{
-        transform: translate(10rem);
-        transition: all .5s ease;
-        position: absolute;
-        top: 1rem;
-        right: 0;
-        padding: .5rem 1rem;
-        z-index: 10;
-        clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 70%, 0 0);
-        text-transform: capitalize;
-        border: none;
+    &:hover {
+        transition: all .5s;
+        background-color: lighten($color-default, 20%);
+        box-shadow: 0px 2px 20px -5px $color-gris;
+        h4{
+            color: $color-primario !important;
+        }
+        &.filter-programmer{
+            .img-team{
+                box-shadow: 0 1px 2px 3px darken($color-alt-primario, 20%);
+            }
+        }
+        &.filter-artist{
+            .img-team{
+                box-shadow: 0 1px 2px 3px darken($color-alt-secundario, 10%);
+            }
+        }
+        @media (min-width: $breakpoint-md) {
+            // .img-team, .social, h4 {
+            .img-team, .social {
+                @include glitch-effect-mixin();
+                // Usamos el mixin para aplicar el delay a múltiples elementos
+                @include random-delay(0.2, 1);
+            }
+        }
     }
-    .badge-artist {
-        background-color: $color-default;
-    }
-    .badge-programmer {
-        background-color: $color-default;
-    }
-
 }
+// @media (min-width: $breakpoint-md) {
+    .galeria-item {
+    }
+// }
 
 
 #game-info{

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="465.91" viewBox="0 0 500 465.91">
+  <defs>
+    <clipPath id="clip-icono_chrysalis">
+      <rect width="500" height="465.91"/>
+    </clipPath>
+  </defs>
+  <g id="icono_chrysalis" clip-path="url(#clip-icono_chrysalis)">
+    <path id="Trazado_1" data-name="Trazado 1" d="M292.471,429.446l21.051-20.267V18.972L294.55,0H207.394L188.421,18.972V408.423l9.109,7.811v.9l57.058,48.782.415-.4.465.4Zm-41.5-52.719-10.122-10.178V75.888l10.122-10.122,10.122,10.121V366.549Zm79.058,23.2L500.972,227.669V18.979L482,.007H416.112V56.923l18.971,18.972V183.343L330.031,306.429ZM.972,227.669,171.913,399.931v-93.5L66.861,183.343V75.895L85.833,56.923V.007H19.944L.972,18.979Z" transform="translate(-0.972)" fill="#223644" fill-rule="evenodd"/>
+  </g>
+</svg>

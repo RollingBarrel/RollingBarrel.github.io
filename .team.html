@@ -33,29 +33,31 @@
 
         <!-- Hero Section -->
         <section id="hero" class="hero">
-            <img src="assets/img/Rolling_Barrel_Team.webp" alt="">
+            <img src="assets/img/page-title-bg.webp" alt="">
             <div class="bg-absolute-negro"></div>
             <div class="container d-flex flex-column align-items-left">
 				<p class="mini-titular">Team</p>
 				<h1 class="glitch-effect color-primario titular" data-text="Rolling Barrel">Rolling Barrel</h1>
-				<!-- <p data-aos="fade-up" data-aos-delay="200">Know more about Us</p> -->
+				<p data-aos="fade-up" data-aos-delay="200">Know more about Us</p>
 			</div>
         </section>
         <!-- /Hero Section -->
 
         <!-- Studio section -->
-        <section id="studio-info" class="bg-default border-primario-b border-primario-t py-5">
+        <section id="studio-info" class="bg-blanco border-primario-b border-primario-t py-5">
 			<div class="container color-negro">
-				<div class="contenedor-flex-horizontal color-blanco">
-					<div class="container">
+				<div class="contenedor-flex-horizontal">
+					<div class="container title ">
+						<p class="mini-titular">About Us</p>
+						<h2 class="titular color-default w-25">Rolling Barrel Team</h2>
+					</div>
+					<div class="container p-3">
 						<p>Chrysalis is a top-down action-packed hack and slash set in a high-tech sci-fi laboratory,
 							where an energy extraction experiment has gone
 							catastrophically wrong. As the head of security, you must traverse through multiple levels
 							of the facility to save your wife—the head
 							scientist—who has become trapped deep within the complex after a violent disturbance.
 						</p>
-					</div>
-					<div class="container p-3">
 						<p>Chrysalis is a top-down action-packed hack and slash set in a high-tech sci-fi laboratory,
 							where an energy extraction experiment has gone
 							catastrophically wrong. As the head of security, you must traverse through multiple levels
@@ -129,7 +131,6 @@
             let content = `<div class="galeria-contenedor border-primario-t pt-5">`;
             data.forEach((person) => {
                 content += `<div class="galeria-item filter-${person.Filter}"> 
-                    <span class="badge-${person.Filter}">${person.Filter}</span>
 					<div class="img-team"><img src="assets/img/team/${person.Photo ? person.Photo : `team-placeholder.jpg`}" class="" alt=""></div>
 					<div class="miembro-info" data-text="ERROR"> 
 						<h4 class="miembro-nombre" data-text="CHRYSALIS">${person.Name}</h4>
