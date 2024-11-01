@@ -627,7 +627,7 @@ img {
 }
 
 .color-accent {
-  color: #ff4a17 !important;
+  color: #3bfedf !important;
 }
 
 .bg-gradient-custom-lr-negro {
@@ -2865,6 +2865,9 @@ section, .section {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+.hero img.team-header-img {
+  top: 35px;
 }
 .hero .btn-get-started {
   background: var(--accent-color);
