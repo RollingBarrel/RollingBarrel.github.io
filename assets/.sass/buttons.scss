@@ -1,7 +1,7 @@
 //BUTTONS
 button, .btn{
     // font-family: var(--default-font);
-    font-family: var(--default-font);
+    font-family: var(--featured-font);
     font-size: 1rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -67,6 +67,14 @@ button, .btn{
 .btn-primario-invert-especial-bl {
     @extend .btn-primario-invert;
     @extend .bl;
+}
+
+/* TODO: CONFIGURAR BOTON BLANCO EN SASS */
+.btn-blanco{
+    background: white !important;
+    &:hover{
+        color: $color-default !important
+    }
 }
 
 
