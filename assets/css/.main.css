@@ -1928,7 +1928,7 @@ button, .btn, .btn-yt, .btn-get-started, .btn-verde, .btn-verde-especial-bl, .bt
   background: color-mix(in srgb, #ff4a17, transparent 20%);
 }
 .footer .copyright {
-  padding: 25px 0;
+  padding: 0 0 25px 0;
 }
 .footer .copyright p {
   margin-bottom: 0;
