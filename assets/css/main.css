@@ -2463,6 +2463,7 @@ section, .section {
 .gallery-filters {
   list-style: none;
   text-align: center;
+  cursor: default;
 }
 
 .gallery-content {

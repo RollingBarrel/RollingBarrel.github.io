@@ -33,17 +33,6 @@
         "Photo": "Balcells-Bach-Jordi.jpg"
     },
     {
-        "Name": "David Bardina Tortosa",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
-        "ArtStation": "",
-        "Website": "",
-        "Other": "",
-        "Filter": "programmer",
-        "Photo": ""
-    },
-    {
         "Name": "Marc Belmonte Juliachs",
         "Roles": "Lead VFX / Engine Programer / Gameplay Programer / Graphics Programer",
         "Linkedin": "https://www.linkedin.com/in/marc-belmonte-juliachs-741470240/",
@@ -67,7 +56,7 @@
     },
     {
         "Name": "Phillip Cherukara",
-        "Roles": "3d Artist and VFX",
+        "Roles": "3D Artist and VFX",
         "Linkedin": "https://www.linkedin.com/in/philip-c-philip/",
         "GitHub": "",
         "ArtStation": "",
@@ -154,17 +143,6 @@
         "Photo": "Garc\u00eda-Segura-Carlos.jpg"
     },
     {
-        "Name": "Enrique Gutierrez Jimenez",
-        "Roles": "",
-        "Linkedin": "",
-        "GitHub": "",
-        "ArtStation": "",
-        "Website": "",
-        "Other": "",
-        "Filter": "programmer",
-        "Photo": ""
-    },
-    {
         "Name": "Xinyu Jiang",
         "Roles": "Gameplay Programer",
         "Linkedin": "https://www.linkedin.com/in/jiang-xinyu-b39a06200/",
@@ -239,7 +217,7 @@
         "Website": "https://m1r4b3l.github.io/",
         "Other": "",
         "Filter": "programmer",
-        "Photo": "Mirabel-Adrian.jpg"
+        "Photo": ""
     },
     {
         "Name": "Jordi Nieto Maldonado",
