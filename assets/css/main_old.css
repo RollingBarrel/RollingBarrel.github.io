@@ -949,6 +949,10 @@ body:not(.index-page) .hero {
   z-index: 3;
 }
 
+.hero .team-title{
+  margin-top: 90px;
+}
+
 .hero h2 {
   margin: 0;
   font-size: 48px;
