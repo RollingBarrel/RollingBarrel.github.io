@@ -2866,6 +2866,9 @@ section, .section {
   position: relative;
   z-index: 3;
 }
+.hero .team-title{
+  margin-top: 90px;
+}
 .hero:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
